@@ -2212,18 +2212,18 @@ two_fourths = one_half, so two_fourths doesn't exist.
 .padding_100_left {
   padding-left: 100px !important;
 }
-/* line 23, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 22, /Users/briannoah/Dev/fractional/src/less/style.less */
 body {
   font-size: 14px;
   background: #ffffff;
   color: #000000;
   font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica !important;
 }
-/* line 30, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 29, /Users/briannoah/Dev/fractional/src/less/style.less */
 span[class*='icon-'] {
   display: block;
 }
-/* line 34, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 33, /Users/briannoah/Dev/fractional/src/less/style.less */
 i[class*='icon-'] {
   display: inline-block;
 }
@@ -2332,7 +2332,7 @@ i[class*='icon-'] {
   width: 70px;
   height: 70px;
 }
-/* line 40, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 39, /Users/briannoah/Dev/fractional/src/less/style.less */
 h1,
 h2,
 h3,
@@ -2342,37 +2342,37 @@ h5 {
   font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica !important;
   font-weight: normal;
 }
-/* line 46, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 45, /Users/briannoah/Dev/fractional/src/less/style.less */
 .gold {
   color: #998260;
 }
-/* line 50, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 49, /Users/briannoah/Dev/fractional/src/less/style.less */
 img {
   max-width: 100%;
 }
-/* line 54, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 53, /Users/briannoah/Dev/fractional/src/less/style.less */
 .link {
   cursor: pointer;
 }
-/* line 57, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 56, /Users/briannoah/Dev/fractional/src/less/style.less */
 a {
   text-decoration: none;
 }
-/* line 61, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 60, /Users/briannoah/Dev/fractional/src/less/style.less */
 .animate_width {
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
   -ms-transition: width 0.5s;
   -o-transition: width 0.5s;
 }
-/* line 65, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 64, /Users/briannoah/Dev/fractional/src/less/style.less */
 .animate_height {
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -ms-transition: height 0.5s;
   -o-transition: height 0.5s;
 }
-/* line 69, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 68, /Users/briannoah/Dev/fractional/src/less/style.less */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -2381,7 +2381,7 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 77, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 76, /Users/briannoah/Dev/fractional/src/less/style.less */
 .select {
   -webkit-touch-callout: all;
   -webkit-user-select: all;
@@ -2390,7 +2390,7 @@ a {
   -ms-user-select: all;
   user-select: all;
 }
-/* line 85, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 84, /Users/briannoah/Dev/fractional/src/less/style.less */
 button,
 .button {
   background-color: #000000;
@@ -2410,43 +2410,43 @@ button,
   -ms-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
 }
-/* line 99, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 98, /Users/briannoah/Dev/fractional/src/less/style.less */
 button:hover,
 .button:hover {
   background-color: mostly_black;
 }
-/* line 102, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 101, /Users/briannoah/Dev/fractional/src/less/style.less */
 button.btn-32,
 .button.btn-32 {
   height: 32px;
   line-height: 32px;
 }
-/* line 106, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 105, /Users/briannoah/Dev/fractional/src/less/style.less */
 button.ex,
 .button.ex {
   font-size: 18px;
 }
-/* line 109, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 108, /Users/briannoah/Dev/fractional/src/less/style.less */
 button.plus,
 .button.plus {
   font-size: 18px;
 }
-/* line 112, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 111, /Users/briannoah/Dev/fractional/src/less/style.less */
 button:hover,
 .button:hover {
   background-color: #333333;
 }
-/* line 115, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 114, /Users/briannoah/Dev/fractional/src/less/style.less */
 button.green,
 .button.green {
   background-color: #c9ff62;
 }
-/* line 118, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 117, /Users/briannoah/Dev/fractional/src/less/style.less */
 button[disabled],
 .button[disabled] {
   opacity: .3;
 }
-/* line 123, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 122, /Users/briannoah/Dev/fractional/src/less/style.less */
 select {
   height: 26px !important;
   padding-left: 5px;
@@ -2461,12 +2461,12 @@ select {
   background: #ffffff url(/img/icon-caret-gray.png) no-repeat right !important;
   background-position-x: inherit;
 }
-/* line 136, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 135, /Users/briannoah/Dev/fractional/src/less/style.less */
 select::-ms-expand {
   display: none;
 }
 @-moz-document url-prefix() {
-  /* line 141, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 140, /Users/briannoah/Dev/fractional/src/less/style.less */
   .css-select-moz {
     display: block;
     height: 30px;
@@ -2478,7 +2478,7 @@ select::-ms-expand {
     border-radius: 5px;
     background-color: #FFF;
   }
-  /* line 153, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 152, /Users/briannoah/Dev/fractional/src/less/style.less */
   select {
     height: 28px !important;
     border: 0 !important;
@@ -2494,7 +2494,7 @@ select::-ms-expand {
     user-select: none;
   }
 }
-/* line 164, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 163, /Users/briannoah/Dev/fractional/src/less/style.less */
 input {
   width: 100%;
   height: 45px;
@@ -2504,30 +2504,30 @@ input {
   border: 0;
   background-color: #e6e6e6;
 }
-/* line 172, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 171, /Users/briannoah/Dev/fractional/src/less/style.less */
 input.ng-valid.ng-dirty {
   border-left: 3px solid #c9ff62;
 }
-/* line 175, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 174, /Users/briannoah/Dev/fractional/src/less/style.less */
 input.ng-invalid {
   border-left: 3px solid red;
 }
-/* line 177, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 176, /Users/briannoah/Dev/fractional/src/less/style.less */
 input.ng-invalid.ng-pristine {
   border: 0;
 }
-/* line 181, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 180, /Users/briannoah/Dev/fractional/src/less/style.less */
 input:required {
   box-shadow: none;
 }
-/* line 184, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 183, /Users/briannoah/Dev/fractional/src/less/style.less */
 input.search_bar {
   background-color: transparent;
   border: 1px solid #e6e6e6 !important;
   font-size: 14px;
   height: 32px;
 }
-/* line 193, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 192, /Users/briannoah/Dev/fractional/src/less/style.less */
 pre {
   background-color: #000000;
   color: #ffffff;
@@ -2540,7 +2540,7 @@ pre {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 199, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 198, /Users/briannoah/Dev/fractional/src/less/style.less */
 pre span {
   float: left;
   width: 100%;
@@ -2553,27 +2553,27 @@ pre span {
   user-select: all;
 }
 @-webkit-keyframes fade_in {
-  /* line 209, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 208, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     opacity: 0;
   }
-  /* line 212, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 211, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     opacity: 1;
   }
 }
 @keyframes fade_in {
-  /* line 217, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 216, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     opacity: 0;
   }
-  /* line 220, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 219, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     opacity: 1;
   }
 }
 @-webkit-keyframes drop_in {
-  /* line 225, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 224, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     -webkit-transform: translateY(-50px);
     -moz-transform: translateY(-50px);
@@ -2581,7 +2581,7 @@ pre span {
     -o-transform: translateY(-50px);
     opacity: 0;
   }
-  /* line 229, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 228, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2591,7 +2591,7 @@ pre span {
   }
 }
 @keyframes drop_in {
-  /* line 235, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 234, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     -webkit-transform: translateY(-50px);
     -moz-transform: translateY(-50px);
@@ -2599,7 +2599,7 @@ pre span {
     -o-transform: translateY(-50px);
     opacity: 0;
   }
-  /* line 239, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 238, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -2609,7 +2609,7 @@ pre span {
   }
 }
 @-webkit-keyframes slide_in {
-  /* line 245, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 244, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -2617,7 +2617,7 @@ pre span {
     -o-transform: translateX(-100%);
     opacity: 0;
   }
-  /* line 249, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 248, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -2627,7 +2627,7 @@ pre span {
   }
 }
 @keyframes slide_in {
-  /* line 255, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 254, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
@@ -2635,7 +2635,7 @@ pre span {
     -o-transform: translateX(-100%);
     opacity: 0;
   }
-  /* line 259, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 258, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
@@ -2645,7 +2645,7 @@ pre span {
   }
 }
 @-webkit-keyframes roll_in {
-  /* line 265, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 264, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     -webkit-transform: translateX(-100%) rotate(-360deg);
     -moz-transform: translateX(-100%) rotate(-360deg);
@@ -2653,7 +2653,7 @@ pre span {
     -o-transform: translateX(-100%) rotate(-360deg);
     opacity: 0;
   }
-  /* line 269, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 268, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     -webkit-transform: translateX(0px) rotate(0deg);
     -moz-transform: translateX(0px) rotate(0deg);
@@ -2663,173 +2663,173 @@ pre span {
   }
 }
 @keyframes roll_in {
-  /* line 275, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 274, /Users/briannoah/Dev/fractional/src/less/style.less */
   from {
     transform: translateX(-100%) rotate(-360deg);
     opacity: 0;
   }
-  /* line 279, /Users/briannoah/Dev/fractional/src/less/style.less */
+  /* line 278, /Users/briannoah/Dev/fractional/src/less/style.less */
   to {
     transform: translateX(0px) rotate(0deg);
     opacity: 1;
   }
 }
-/* line 285, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 284, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in.ng-enter {
   -webkit-animation: slide_in .5s;
   animation: slide_in .5s;
 }
-/* line 289, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 288, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in.ng-leave {
   -webkit-animation: slide_in .5s reverse;
   animation: slide_in .5s reverse;
 }
-/* line 293, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 292, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 297, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 296, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in.ng-leave-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 303, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 302, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in_enter.ng-enter {
   -webkit-animation: slide_in .5s;
   animation: slide_in .5s;
 }
-/* line 307, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 306, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in_enter.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 314, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 313, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in_leave.ng-leave {
   -webkit-animation: slide_in .5s reverse;
   animation: slide_in .5s reverse;
 }
-/* line 318, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 317, /Users/briannoah/Dev/fractional/src/less/style.less */
 .slide_in_leave.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 324, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 323, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in.ng-enter {
   -webkit-animation: roll_in .5s;
   animation: roll_in .5s;
 }
-/* line 328, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 327, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in.ng-leave {
   -webkit-animation: roll_in .5s reverse;
   animation: roll_in .5s reverse;
 }
-/* line 332, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 331, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 336, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 335, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in.ng-leave-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 342, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 341, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in_enter.ng-enter {
   -webkit-animation: roll_in .5s;
   animation: roll_in .5s;
 }
-/* line 346, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 345, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in_enter.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 353, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 352, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in_leave.ng-leave {
   -webkit-animation: roll_in .5s reverse;
   animation: roll_in .5s reverse;
 }
-/* line 357, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 356, /Users/briannoah/Dev/fractional/src/less/style.less */
 .roll_in_leave.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 363, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 362, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in.ng-enter {
   -webkit-animation: fade_in .5s;
   animation: fade_in .5s;
 }
-/* line 367, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 366, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in.ng-leave {
   -webkit-animation: fade_in .5s reverse;
   animation: fade_in .5s reverse;
 }
-/* line 371, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 370, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 375, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 374, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in.ng-leave-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 381, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 380, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in_enter.ng-enter {
   -webkit-animation: fade_in .5s;
   animation: fade_in .5s;
 }
-/* line 385, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 384, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in_enter.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 392, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 391, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in_leave.ng-leave {
   -webkit-animation: fade_in .5s reverse;
   animation: fade_in .5s reverse;
 }
-/* line 396, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 395, /Users/briannoah/Dev/fractional/src/less/style.less */
 .fade_in_leave.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 402, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 401, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in.ng-enter {
   -webkit-animation: drop_in .5s;
   animation: drop_in .5s;
 }
-/* line 406, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 405, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in.ng-leave {
   -webkit-animation: drop_in .5s reverse;
   animation: drop_in .5s reverse;
 }
-/* line 410, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 409, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 414, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 413, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in.ng-leave-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 420, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 419, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in_enter.ng-enter {
   -webkit-animation: drop_in .5s;
   animation: drop_in .5s;
 }
-/* line 424, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 423, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in_enter.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-/* line 431, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 430, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in_leave.ng-leave {
   -webkit-animation: drop_in .5s reverse;
   animation: drop_in .5s reverse;
 }
-/* line 435, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 434, /Users/briannoah/Dev/fractional/src/less/style.less */
 .drop_in_leave.ng-enter-stagger {
   -webkit-animation-delay: 0.05s;
   animation-delay: 0.05s;
@@ -2947,36 +2947,60 @@ pre span {
   }
 }
 /* line 32, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works [data-show-html="true"] {
+  cursor: pointer;
+}
+/* line 36, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works span.frac {
+  cursor: default;
+  display: inline-block;
+  font-size: 10px;
+  background: #dbf6a5;
+  color: #999999;
+  min-width: 25px;
+  height: 25px;
+  padding: 2px 2px;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/* line 49, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works span.frac.lcd {
+  background: #f15700;
+  color: #ffffff;
+}
+/* line 55, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column,
 #home #how-it-works .columns {
   padding: 0 5px;
   margin-bottom: 5px;
 }
-/* line 35, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 58, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:first-of-type,
 #home #how-it-works .columns:first-of-type {
   padding-left: 0;
 }
-/* line 38, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 61, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:last-of-type,
 #home #how-it-works .columns:last-of-type {
   padding-right: 0;
 }
-/* line 41, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 64, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span,
 #home #how-it-works .columns span {
-  cursor: default;
   display: block;
   padding: 10px 5px;
   background-color: #e6e6e6;
+  word-break: break-all;
 }
-/* line 46, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 69, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span:hover,
 #home #how-it-works .columns span:hover {
   background-color: #dbf6a5;
   color: #999999;
 }
-/* line 51, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 74, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column,
 #home #how-it-works .columns .column,
 #home #how-it-works .column .columns,
@@ -3045,19 +3069,19 @@ pre span {
 #modal_content .result_name {
   text-transform: capitalize;
 }
-/* line 448, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 447, /Users/briannoah/Dev/fractional/src/less/style.less */
 * {
   box-sizing: border-box;
   position: relative;
   outline: none !important;
 }
-/* line 454, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 453, /Users/briannoah/Dev/fractional/src/less/style.less */
 .centered {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-/* line 461, /Users/briannoah/Dev/fractional/src/less/style.less */
+/* line 460, /Users/briannoah/Dev/fractional/src/less/style.less */
 i.centered {
   display: block;
 }

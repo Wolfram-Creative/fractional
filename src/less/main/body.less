@@ -29,6 +29,29 @@
 		}
 	}
 	#how-it-works {
+		[data-show-html="true"] {
+			cursor: pointer;
+		}
+		span {
+			&.frac {
+				cursor: default;
+				display: inline-block;
+				font-size: 10px;
+				background: @light_green;
+				color: @gray;
+				min-width: 25px;
+				height: 25px;
+				padding:2px 2px;
+				line-height: 21px;
+				text-align: center;
+				border-radius: 50%;
+				margin-right: 5px;
+				&.lcd {
+					background: @orange;
+					color: @white;
+				}
+			}
+		}
 		.column, .columns {
 			padding: 0 5px;
 			margin-bottom:5px;
@@ -39,10 +62,10 @@
 				padding-right: 0;
 			}
 			span {
-				cursor: default;
 				display: block;
 				padding: 10px 5px;
 				background-color: @light_light_gray;
+				word-break:break-all;
 				&:hover {
 					background-color: @light_green;
 					color: @gray;

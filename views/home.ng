@@ -22,200 +22,413 @@
 <!-- WHOLE -->
 			<h2 class="text_left" data-show-html="true">Whole</h2>
 			<p>A single column. Not much to look at here...</p>
+			<p><span class="frac">1</span></p>
 			<div class="fractional_row">
 				<div class="one column" data-show-html="true">
-					<span>.one.column, .whole.column</span>
+					<span>.one, .whole</span>
 				</div>
 			</div>
 <!-- HALFS -->
 			<h2 class="text_left" data-show-html="true">Halfs</h2>
+			<p><span class="frac">1/2</span><span class="frac lcd">1</span</p>
 			<div class="fractional_row">
 				<div class="one_half columns" data-show-html="true">
-					<span>.one_half.columns</span>
+					<span>.one_half</span>
 				</div>
 				<div class="one_half columns" data-show-html="true">
-					<span>.one_half.columns</span>
+					<span>.one_half</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_half columns"></div>
+				<div class="one_half columns text_center margin_5_top hide_small">
+					Two columns nested inside of 1/2 columns
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="one_half columns" data-show-html="true">
-					<span>.one_half.columns</span>
+					<span>.one_half</span>
 				</div>
 				<div class="one_half columns">
 					<div class="one_half columns" data-show-html="true">
-					<span>.one_half.columns</span>
+						<span>.one_half</span>
+					</div>
+					<div class="one_half columns" data-show-html="true">
+						<span>.one_half</span>
+					</div>
 				</div>
+			</div>
+			<div class="fractional_row">
 				<div class="one_half columns" data-show-html="true">
-					<span>.one_half.columns</span>
+					<span>.one_half</span>
 				</div>
+				<div class="one_half columns">
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third</span>
+					</div>
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third</span>
+					</div>
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third</span>
+					</div>
 				</div>
 			</div>
 <!-- THIRDS -->
 			<h2 class="text_left" data-show-html="true">Thirds</h2>
+			<p><span class="frac">1/3</span><span class="frac">2/3</span><span class="frac lcd">1</span</p>
 			<div class="fractional_row">
 				<div class="one_third columns" data-show-html="true">
-					<span>.one_third.columns</span>
+					<span>.one_third</span>
 				</div>
 				<div class="one_third columns" data-show-html="true">
-					<span>.one_third.columns</span>
+					<span>.one_third</span>
 				</div>
 				<div class="one_third columns" data-show-html="true">
-					<span>.one_third.columns</span>
+					<span>.one_third</span>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="one_third columns" data-show-html="true">
-					<!-- <span>.one_third.columns</span> -->
+					<span>.one_third</span>
 				</div>
 				<div class="two_thirds columns" data-show-html="true">
-					<span>.two_thirds.columns</span>
+					<span>.two_thirds</span>
 				</div>
 			</div>
 			<div class="fractional_row">
-				<div class="one_third columns" data-show-html="true">
-					<!-- <span>.one_third.columns</span> -->
+				<div class="one_third columns">
+					<span>.one_third</span>
 				</div>
 				<div class="two_thirds columns">
 					<div class="one_third columns" data-show-html="true">
-						<span>.one_third.columns</span>
+						<span>.one_third</span>
 					</div>
 					<div class="one_third columns" data-show-html="true">
-						<span>.one_third.columns</span>
+						<span>.one_third</span>
 					</div>
 					<div class="one_third columns" data-show-html="true">
-						<span>.one_third.columns</span>
+						<span>.one_third</span>
 					</div>
 				</div>
 			</div>
 			<div class="fractional_row">
-				<div class="one_third columns" data-show-html="true">
-					<!-- <span>.one_third.columns</span> -->
+				<div class="one_third columns">
+					<span>.one_third</span>
 				</div>
 				<div class="two_thirds columns">
 					<div class="one_quarter columns" data-show-html="true">
-						<span>.one_quarter.columns</span>
-					</div>
-					<div class="one_half columns" data-show-html="true">
-						<span>.one_half.columns</span>
+						<span>.one_quarter</span>
 					</div>
 					<div class="one_quarter columns" data-show-html="true">
-						<span>.one_quarter.columns</span>
+						<span>.one_quarter</span>
+					</div>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
+					</div>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
 					</div>
 				</div>
 			</div>
 <!-- FOURTHS -->
 			<h2 class="text_left" data-show-html="true">Fourths</h2>
+			<p><span class="frac">1/4</span><span class="frac lcd">1/2</span><span class="frac">3/4</span><span class="frac lcd">1</span</p>
 			<div class="fractional_row">
 				<div class="one_fourth columns" data-show-html="true">
-					<span>.one_fourth.columns</span>
+					<span>.one_fourth</span>
 				</div>
 				<div class="one_fourth columns" data-show-html="true">
-					<span>.one_fourth.columns</span>
+					<span>.one_fourth</span>
 				</div>
 				<div class="one_fourth columns" data-show-html="true">
-					<span>.one_fourth.columns</span>
+					<span>.one_fourth</span>
 				</div>
 				<div class="one_quarter columns" data-show-html="true">
-					<span>.one_quarter.columns</span>
+					<span>.one_quarter</span>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="three_fourths columns" data-show-html="true">
-					<span>.three_fourths.columns</span>
+					<span>.three_fourths</span>
 				</div>
 				<div class="one_quarter columns" data-show-html="true">
-					<span>.one_quarter.columns</span>
+					<span>.one_quarter</span>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="three_quarters columns">
 					<div class="one_fourth columns" data-show-html="true">
-						<span>.one_fourth.columns</span>
+						<span>.one_fourth</span>
 					</div>
 					<div class="one_fourth columns" data-show-html="true">
-						<span>.one_fourth.columns</span>
+						<span>.one_fourth</span>
 					</div>
 					<div class="one_fourth columns" data-show-html="true">
-						<span>.one_fourth.columns</span>
+						<span>.one_fourth</span>
 					</div>
 					<div class="one_quarter columns" data-show-html="true">
-						<span>.one_quarter.columns</span>
+						<span>.one_quarter</span>
 					</div>
 				</div>
 				<div class="one_quarter columns" data-show-html="true">
-					<span>.one_quarter.columns</span>
+					<span>.one_quarter</span>
 				</div>
 			</div>
 <!-- Fifths -->
 			<h2 class="text_left" data-show-html="true">Fifths</h2>
+			<p><span class="frac">1/5</span><span class="frac">2/5</span><span class="frac">3/5</span><span class="frac">4/5</span></p>
 			<div class="fractional_row">
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="two_fifths columns" data-show-html="true">
-					<span>.two_fifths.columns</span>
+					<span>.two_fifths</span>
 				</div>
 				<div class="one_fifth columns" data-show-html="true">
-					<span>.one_fifth.columns</span>
+					<span>.one_fifth</span>
 				</div>
 				<div class="two_fifths columns" data-show-html="true">
-					<span>.two_fifths.columns</span>
+					<span>.two_fifths</span>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="three_fifths columns" data-show-html="true">
-					<span>.three_fifths.columns</span>
+					<span>.three_fifths</span>
 				</div>
 				<div class="two_fifths columns">
 					<div class="two_fifths columns" data-show-html="true">
-						<span>.two_fifths.columns</span>
+						<span>.two_fifths</span>
 					</div>
 					<div class="three_fifths columns" data-show-html="true">
-						<span>.three_fifths.columns</span>
+						<span>.three_fifths</span>
 					</div>
 				</div>
 			</div>
 			<div class="fractional_row">
 				<div class="three_fifths columns">
-					<div class="one_fifth columns" data-show-html="true">
-						<span>.one_fifth.columns</span>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
 					</div>
-					<div class="one_fifth columns" data-show-html="true">
-						<span>.one_fifth.columns</span>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
 					</div>
-					<div class="one_fifth columns" data-show-html="true">
-						<span>.one_fifth.columns</span>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
 					</div>
-					<div class="one_fifth columns" data-show-html="true">
-						<span>.one_fifth.columns</span>
-					</div>
-					<div class="one_fifth columns" data-show-html="true">
-						<span>.one_fifth.columns</span>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter</span>
 					</div>
 				</div>
 				<div class="two_fifths columns">
 					<div class="two_fifths columns" data-show-html="true">
-						<span>.two_fifths.columns</span>
+						<span>.two_fifths</span>
 					</div>
 					<div class="three_fifths columns" data-show-html="true">
-						<span>.three_fifths.columns</span>
+						<span>.three_fifths</span>
 					</div>
 				</div>
 			</div>
+<!-- SIXTHS -->
+			<h2 class="text_left" data-show-html="true">Sixths</h2>
+			<p><span class="frac">1/6</span><span class="frac lcd">1/3</span><span class="frac lcd">1/2</span><span class="frac lcd">2/3</span><span class="frac">5/6</span><span class="frac lcd">1</span></p>
+			<div class="fractional_row">
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="five_sixths columns" data-show-html="true">
+					<span>.five_sixths</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="five_sixths columns" data-show-html="true">
+					<span>.five_sixths</span>
+				</div>
+				<div class="one_twelfth columns" data-show-html="true">
+					<span>.one_twelfth</span>
+				</div>
+				<div class="one_twelfth columns" data-show-html="true">
+					<span>.one_twelfth</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_twelfth columns" data-show-html="true">
+					<span>.one_twelfth</span>
+				</div>
+				<div class="one_quarter columns" data-show-html="true">
+					<span>.one_quarter</span>
+				</div>
+				<div class="one_third columns" data-show-html="true">
+					<span>.one_third</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+				<div class="one_sixth columns" data-show-html="true">
+					<span>.one_sixth</span>
+				</div>
+			</div>
+<!-- SEVENTHS -->
+			<h2 class="text_left" data-show-html="true">Sevenths</h2>
+			<p><span class="frac">1/7</span><span class="frac">2/7</span><span class="frac">3/7</span><span class="frac">4/7</span><span class="frac">5/7</span><span class="frac">6/7</span></p>
+			<div class="fractional_row">
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+				<div class="two_sevenths columns" data-show-html="true">
+					<span>.two_sevenths</span>
+				</div>
+				<div class="three_sevenths columns" data-show-html="true">
+					<span>.three_sevenths</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="four_sevenths columns" data-show-html="true">
+					<span>.four_sevenths</span>
+				</div>
+				<div class="three_sevenths columns" data-show-html="true">
+					<span>.three_sevenths</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="five_sevenths columns" data-show-html="true">
+					<span>.five_sevenths</span>
+				</div>
+				<div class="two_sevenths columns" data-show-html="true">
+					<span>.two_sevenths</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="six_sevenths columns" data-show-html="true">
+					<span>.six_sevenths</span>
+				</div>
+				<div class="one_seventh columns" data-show-html="true">
+					<span>.one_seventh</span>
+				</div>
+			</div>
+<!-- EIGHTHS -->
+			<h2 class="text_left" data-show-html="true">Eighths</h2>
+			<p><span class="frac">1/8</span><span class="frac lcd">1/4</span><span class="frac">3/8</span><span class="frac lcd">1/2</span><span class="frac">5/8</span><span class="frac lcd">3/4</span><span class="frac">7/8</span><span class="frac lcd">1</span></p>
+			<div class="fractional_row">
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+				<div class="three_eighths columns" data-show-html="true">
+					<span>.three_eighths</span>
+				</div>
+				<div class="one_half columns" data-show-html="true">
+					<span>.one_half</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_quarter columns" data-show-html="true">
+					<span>.one_quarter</span>
+				</div>
+				<div class="five_eighths columns" data-show-html="true">
+					<span>.five_eighths</span>
+				</div>
+				<div class="one_eighth columns" data-show-html="true">
+					<span>.one_eighth</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="three_eighths columns" data-show-html="true">
+					<span>.three_eighths</span>
+				</div>
+				<div class="five_eighths columns" data-show-html="true">
+					<span>.five_eighths</span>
+				</div>
+			</div>
+
+
+
+
 		</div>
 	</section>
 </div> 

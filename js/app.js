@@ -165,7 +165,6 @@ app.directive('showHtml', ['$window', function ($window) {
     return {
         restrict: 'A',
         link: function ($scope, elem, attrs) {
-            console.log(attrs);
             var attr_class = attrs['class'],
                 element = attrs.$$element.context.localName,
                 html = '<' + element + ' class="' + attr_class + '"></' + element + '>',
