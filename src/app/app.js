@@ -34,7 +34,7 @@ app.run(['$rootScope', '$http', '_$local', '$anchorScroll', function ($rootScope
 				text: 'Download fractional.css',
 				button_a : {
 					link: '/fractional.min.css',
-					text: 'fractional.min.css(26kb)'
+					text: 'fractional.min.css(35kb)'
 				},
 				button_b : {
 					link: '/fractional.css',

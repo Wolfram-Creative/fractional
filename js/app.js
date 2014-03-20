@@ -34,7 +34,7 @@ app.run(['$rootScope', '$http', '_$local', '$anchorScroll', function ($rootScope
 				text: 'Download fractional.css',
 				button_a : {
 					link: '/fractional.min.css',
-					text: 'fractional.min.css(26kb)'
+					text: 'fractional.min.css(35kb)'
 				},
 				button_b : {
 					link: '/fractional.css',
@@ -120,7 +120,12 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 
 	// Set methods and default models
 	angular.extend($scope, {
-		root: $rootScope
+		root: $rootScope,
+		hero: {
+			text: 'Common-sense responsive grid system for rapid development',
+			img: '/img/fractional-1400.png'
+		},
+		tooltip: ''
 	});
 
 	if ($scope.root.logged_in) {
@@ -153,6 +158,31 @@ app.directive('elementWidth', ['$window', function ($window) {
             handler();
         }
     }; 
+}]);
+
+app.directive('showHtml', ['$window', function ($window) {
+    'use strict';
+    return {
+        restrict: 'A',
+        link: function ($scope, elem, attrs) {
+            console.log(attrs);
+            var attr_class = attrs['class'],
+                element = attrs.$$element.context.localName,
+                html = '<' + element + ' class="' + attr_class + '"></' + element + '>',
+                emmet = element + '.' + attr_class.replace(' ', '.'),
+                $this = angular.element(elem),
+                code_snippets = [ html, ' ', emmet ];
+            $this.on('click', function () {
+                $scope.$apply(function () {
+                    $scope.root.modal = {
+                        display: true,
+                        text: 'Copy the HTML or Emmet and paste in your favorite editor:',
+                        code_snippets : code_snippets
+                    };
+                });
+            });
+        }
+    };
 }]);
 
 app.directive('ngEnterKey', function () {

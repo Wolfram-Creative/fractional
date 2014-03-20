@@ -1,7 +1,10 @@
 <div id="main_header" class="responsive_container">
 	<div class="fractional_row padding_10_left padding_10_right">
-		<div class="one_quarter small_one_quarter medium_one_third columns logo padding_2_top text_align_center">
-			<a href="/" >fractional</a>
+		<div class="one_quarter small_one_quarter medium_one_third columns logo padding_2_top text_align_center small_padding_5">
+			<a href="/">
+				<i class="icon-fractional-150 no-text hide_small show_medium">fractional.css</i>
+				<i class="icon-logo-43 no-text show_small hide_medium hide_large"></i>
+			</a>
 		</div>
 		<div class="three_quarters small_three_quarters medium_two_thirds columns text_right nav_right">
 			<span class="link" ng-click="root.showDownload()">Download</span>

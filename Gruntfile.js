@@ -68,7 +68,7 @@ module.exports = function(grunt) {
             },
         },
         sprites: {
-            files: ['src/img/icon/*.png'],
+            files: ['src/img/**/*.png'],
             tasks: ['sprite', 'less:dev']
         },
         views: {

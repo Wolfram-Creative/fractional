@@ -1,12 +1,221 @@
-<div id="main">
-	<div class="responsive_container">
-		<div class="fractional_row" id="hero"></div>
-	</div>
-</div>
-<div id="info">
-	<div class="responsive_container">
-		<div class="fractional_row text_align_center padding_50_top">
-			<h1>fractional.CSS</h1>
+<div id="home">
+	<section id="hero" class="padding_30_top padding_30_bottom small_padding_20">
+		<div class="responsive_container">
+			<div class="fractional_row text_align_center padding_20">
+				<div class="two_thirds medium_large_one_third columns logo">
+					<img ng-src="{{hero.img}}">
+				</div>
+				<div class="one_third medium_large_two_thirds columns tagline padding_20 large_padding_50_top">
+					{{hero.text}}
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+	<section id="how-it-works">
+		<div class="responsive_container small_padding_5">
+
+						<h1>How It Works</h1>
+						<p>Let's start with general desktop views. This includes nesting columns inside of columns.</p>
+						<p>The column and columns namespace is interchangeable. At it's core, fractional uses the least common denominators. There are no 2/8<sup>ths</sup>, or 2/4<sup>ths</sup>; the least common denominator would mean that 2/8 = 1/4, and 2/4 = 1/2. This helps keep your code clean.</p>
+						<p>There are a few things that are very important to note here. Everything is relative. This is important in order to have everthing flow responsive. There is no padding, and no margin. If you want margins, add them. If you want padding, add it. If you want to have a full width row, do NOT add any lateral marging. It will break the system. If you want space between your columns, add padding and add a div inside with your content.</p>
+						<p>What's amazing about this is that you aren't stuck with the same denominator. If you want to have 1/2 + 1/4 + 1/4, you can. If you want to then have 1/3 + 1/3 + 1/3 inside of the 1/2, go ahead. Try 1/5 + 1/10 + 7/10... It works.</p>
+<!-- WHOLE -->
+			<h2 class="text_left" data-show-html="true">Whole</h2>
+			<p>A single column. Not much to look at here...</p>
+			<div class="fractional_row">
+				<div class="one column" data-show-html="true">
+					<span>.one.column, .whole.column</span>
+				</div>
+			</div>
+<!-- HALFS -->
+			<h2 class="text_left" data-show-html="true">Halfs</h2>
+			<div class="fractional_row">
+				<div class="one_half columns" data-show-html="true">
+					<span>.one_half.columns</span>
+				</div>
+				<div class="one_half columns" data-show-html="true">
+					<span>.one_half.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_half columns" data-show-html="true">
+					<span>.one_half.columns</span>
+				</div>
+				<div class="one_half columns">
+					<div class="one_half columns" data-show-html="true">
+					<span>.one_half.columns</span>
+				</div>
+				<div class="one_half columns" data-show-html="true">
+					<span>.one_half.columns</span>
+				</div>
+				</div>
+			</div>
+<!-- THIRDS -->
+			<h2 class="text_left" data-show-html="true">Thirds</h2>
+			<div class="fractional_row">
+				<div class="one_third columns" data-show-html="true">
+					<span>.one_third.columns</span>
+				</div>
+				<div class="one_third columns" data-show-html="true">
+					<span>.one_third.columns</span>
+				</div>
+				<div class="one_third columns" data-show-html="true">
+					<span>.one_third.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_third columns" data-show-html="true">
+					<!-- <span>.one_third.columns</span> -->
+				</div>
+				<div class="two_thirds columns" data-show-html="true">
+					<span>.two_thirds.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_third columns" data-show-html="true">
+					<!-- <span>.one_third.columns</span> -->
+				</div>
+				<div class="two_thirds columns">
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third.columns</span>
+					</div>
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third.columns</span>
+					</div>
+					<div class="one_third columns" data-show-html="true">
+						<span>.one_third.columns</span>
+					</div>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="one_third columns" data-show-html="true">
+					<!-- <span>.one_third.columns</span> -->
+				</div>
+				<div class="two_thirds columns">
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter.columns</span>
+					</div>
+					<div class="one_half columns" data-show-html="true">
+						<span>.one_half.columns</span>
+					</div>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter.columns</span>
+					</div>
+				</div>
+			</div>
+<!-- FOURTHS -->
+			<h2 class="text_left" data-show-html="true">Fourths</h2>
+			<div class="fractional_row">
+				<div class="one_fourth columns" data-show-html="true">
+					<span>.one_fourth.columns</span>
+				</div>
+				<div class="one_fourth columns" data-show-html="true">
+					<span>.one_fourth.columns</span>
+				</div>
+				<div class="one_fourth columns" data-show-html="true">
+					<span>.one_fourth.columns</span>
+				</div>
+				<div class="one_quarter columns" data-show-html="true">
+					<span>.one_quarter.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="three_fourths columns" data-show-html="true">
+					<span>.three_fourths.columns</span>
+				</div>
+				<div class="one_quarter columns" data-show-html="true">
+					<span>.one_quarter.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="three_quarters columns">
+					<div class="one_fourth columns" data-show-html="true">
+						<span>.one_fourth.columns</span>
+					</div>
+					<div class="one_fourth columns" data-show-html="true">
+						<span>.one_fourth.columns</span>
+					</div>
+					<div class="one_fourth columns" data-show-html="true">
+						<span>.one_fourth.columns</span>
+					</div>
+					<div class="one_quarter columns" data-show-html="true">
+						<span>.one_quarter.columns</span>
+					</div>
+				</div>
+				<div class="one_quarter columns" data-show-html="true">
+					<span>.one_quarter.columns</span>
+				</div>
+			</div>
+<!-- Fifths -->
+			<h2 class="text_left" data-show-html="true">Fifths</h2>
+			<div class="fractional_row">
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="two_fifths columns" data-show-html="true">
+					<span>.two_fifths.columns</span>
+				</div>
+				<div class="one_fifth columns" data-show-html="true">
+					<span>.one_fifth.columns</span>
+				</div>
+				<div class="two_fifths columns" data-show-html="true">
+					<span>.two_fifths.columns</span>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="three_fifths columns" data-show-html="true">
+					<span>.three_fifths.columns</span>
+				</div>
+				<div class="two_fifths columns">
+					<div class="two_fifths columns" data-show-html="true">
+						<span>.two_fifths.columns</span>
+					</div>
+					<div class="three_fifths columns" data-show-html="true">
+						<span>.three_fifths.columns</span>
+					</div>
+				</div>
+			</div>
+			<div class="fractional_row">
+				<div class="three_fifths columns">
+					<div class="one_fifth columns" data-show-html="true">
+						<span>.one_fifth.columns</span>
+					</div>
+					<div class="one_fifth columns" data-show-html="true">
+						<span>.one_fifth.columns</span>
+					</div>
+					<div class="one_fifth columns" data-show-html="true">
+						<span>.one_fifth.columns</span>
+					</div>
+					<div class="one_fifth columns" data-show-html="true">
+						<span>.one_fifth.columns</span>
+					</div>
+					<div class="one_fifth columns" data-show-html="true">
+						<span>.one_fifth.columns</span>
+					</div>
+				</div>
+				<div class="two_fifths columns">
+					<div class="two_fifths columns" data-show-html="true">
+						<span>.two_fifths.columns</span>
+					</div>
+					<div class="three_fifths columns" data-show-html="true">
+						<span>.three_fifths.columns</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </div> 

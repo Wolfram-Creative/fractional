@@ -8,7 +8,12 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 
 	// Set methods and default models
 	angular.extend($scope, {
-		root: $rootScope
+		root: $rootScope,
+		hero: {
+			text: 'Common-sense responsive grid system for rapid development',
+			img: '/img/fractional-1400.png'
+		},
+		tooltip: ''
 	});
 
 	if ($scope.root.logged_in) {
