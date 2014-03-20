@@ -1,0 +1,10 @@
+<div id="main_header" class="responsive_container">
+	<div class="fractional_row padding_10_left padding_10_right">
+		<div class="one_quarter small_one_quarter medium_one_third columns logo padding_2_top text_align_center">
+			<a href="/" >fractional</a>
+		</div>
+		<div class="three_quarters small_three_quarters medium_two_thirds columns text_right nav_right">
+			<span class="link" ng-click="root.showDownload()">Download</span>
+		</div>
+	</div>
+</div>

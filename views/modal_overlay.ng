@@ -1,0 +1,23 @@
+<div id="modal_overlay" ng-if="root.modal.display" ng-click="hideModal()">
+</div>
+
+<div id="modal_content" ng-if="root.modal.display" window-height="window_height" window-width="window_width" element-width element-height style="left: {{window_width/2 - element_width/2}}px; top: {{window_height/2 - element_height/2}}px" class="padding_20">
+	<h1 ng-if="root.modal.title">{{root.modal.title}}</h1>
+	<div class="modal_text margin_20_bottom" ng-if="root.modal.text">{{root.modal.text}}</div>
+	<pre ng-if="root.modal.code_snippets" class="margin_20_bottom">
+		<span ng-repeat="snippet in root.modal.code_snippets">{{snippet}}</span>
+	</pre>
+	<div class="fractional_row margin_50_bottom">
+		<div class="columns" ng-class="root.modal.button_b ? 'one_half padding_10_right' : 'whole'" ng-if="root.modal.button_a">
+			<a ng-href="{{root.modal.button_a.link}}" target="_blank"><button>{{root.modal.button_a.text}}</button></a>
+		</div>
+		<div class="columns" ng-class="root.modal.button_a ? 'one_half padding_10_left' : 'whole'" ng-if="root.modal.button_b">
+			<a ng-href="{{root.modal.button_b.link}}" target="_blank"><button>{{root.modal.button_b.text}}</button></a>
+		</div>
+	</div>
+	<div class="fractional_row">
+		<div class="one_quarter columns right">
+			<button ng-click="hideModal()">OK</button>
+		</div>
+	</div>
+</div>

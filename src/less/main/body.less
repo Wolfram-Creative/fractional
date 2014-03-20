@@ -1,0 +1,405 @@
+
+#view {
+	#hero {
+	}
+}
+
+.task_list {
+	overflow: auto;
+	.task {
+		.task_title {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		button {
+			opacity: 0;
+			.transition(opacity .5s);
+			height:30px;
+			line-height: 30px;
+		}
+		&:hover {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#task_creator {
+	input {
+		border-left:0;
+	}
+	.task_details {
+		overflow: auto;
+		.task_name {
+			border-bottom: 1px solid @gray;
+		}
+		.variable {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: default;
+			.task_title {
+				font-size: 16px;
+				line-height: 30px;
+				cursor: pointer;
+			}
+			.button {
+				opacity: 0;
+				.transition(opacity .5s);
+				height:30px;
+				line-height: 30px;
+			}
+			.key {
+				text-align: right;
+			}
+			.value {
+				&:before {
+					content: ':';
+					display: block;
+					position: absolute;
+					left: -10px;
+				}
+			}
+			&:hover {
+				.button {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.workflow_list {
+	overflow: auto;
+	.workflow {
+		.workflow_title {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		button {
+			opacity: 0;
+			.transition(opacity .5s);
+			height:30px;
+			line-height: 30px;
+		}
+		&:hover {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#workflow_creator {
+	input {
+		border-left:0;
+	}
+	.task_title {
+		cursor: -webkit-grab; 
+		cursor: -moz-grab;
+		// .no-select;
+		&:active {
+			cursor: -webkit-grabbing; 
+			cursor: -moz-grabbing;
+		}
+		&:hover {
+			background-color: @light_gray;
+		}
+	}
+
+	.workflow_name {
+		border-bottom: 1px solid @gray;
+	}
+	.task {
+		font-size: 16px;
+		line-height: 30px;
+		.workflow_title {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		.button {
+			opacity: 0;
+			.transition(opacity .5s);
+			height:30px;
+			line-height: 30px;
+		}
+		&:hover {
+			.button {
+				opacity: 1;
+			}
+			background-color: @light_gray;
+		}
+		cursor: -webkit-grab; 
+		cursor: -moz-grab;
+		// .no-select;
+		&:active {
+			cursor: -webkit-grabbing; 
+			cursor: -moz-grabbing;
+		}
+	}
+	.workflow_variables {
+		height: 35px;
+		font-size: 15px;
+		line-height: 35px;
+		margin-bottom:5px;
+		.variable_name {
+			text-align: right;
+		}
+		input {
+			height: 35px;
+			margin: 0;
+		}
+	}
+	.edit_variables {
+		width:30px;
+		height:30px;
+		background-color: @green;
+		display: inline-block;
+		cursor: pointer;
+		line-height: 30px;
+		text-align: center;
+		color: @white;
+		border-radius: 50%;
+		position: absolute;
+		left: -35px;
+		&.editing {
+			.transform(rotate(35deg));
+		}
+		&.not_editing {
+			.transform(rotate(0deg));
+		}
+	}
+
+}
+
+.playlist_list {
+	.playlist {
+		.playlist_title {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		button {
+			opacity: 0;
+			.transition(opacity .5s);
+			height:30px;
+			line-height: 30px;
+		}
+		&:hover {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+	&.dashboard_view {
+		.search_results {
+			max-height: 200px;
+			overflow: auto;
+			border-top: 1px solid @light_light_gray;
+			border-bottom: 1px solid @light_light_gray;
+			.playlist {
+				&:hover {
+					color: @white;
+					background-color: @orange;
+				}
+			}
+		}
+	}
+}
+
+#playlist_creator {
+	input {
+		border-left:0;
+	}
+	select {
+		width: 100%;
+	}
+	.task_title {
+		cursor: -webkit-grab; 
+		cursor: -moz-grab;
+		// .no-select;
+		&:active {
+			cursor: -webkit-grabbing; 
+			cursor: -moz-grabbing;
+		}
+		&:hover {
+			background-color: @light_gray;
+		}
+	}
+
+	.playlist_name {
+		border-bottom: 1px solid @gray;
+	}
+	.workflow {
+		font-size: 16px;
+		line-height: 30px;
+		.workflow_title {
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		.button {
+			opacity: 0;
+			.transition(opacity .5s);
+			height:30px;
+			line-height: 30px;
+		}
+		&:hover {
+			.button {
+				opacity: 1;
+			}
+			background-color: @light_gray;
+		}
+		cursor: -webkit-grab; 
+		cursor: -moz-grab;
+		// .no-select;
+		&:active {
+			cursor: -webkit-grabbing; 
+			cursor: -moz-grabbing;
+		}
+	}
+}
+
+#dashboard {
+	.tests {
+		padding:5px;
+		font-size: 16px;
+		line-height: 40px;
+		color: @gray;
+		cursor: pointer;
+		.test_count {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+			overflow: hidden;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			// text-shadow: 0 0 2px @gray;
+			&.pending {
+				background-color: @yellow;
+			}
+			&.started {
+				background-color: @orange;
+			}
+			&.failed {
+				background-color: @red;
+			}
+			&.passed {
+				background-color: @green;
+			}
+			&.all {
+				background-color: @blue;
+			}
+
+			.count {
+				color: @white;
+			}
+		}	
+		.title {
+			vertical-align: top;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+		}
+	}
+	#test_results {
+		.pending, .not-started {
+			background-color: lighten(@yellow, 40%);
+			&:hover {
+				background-color: lighten(@yellow, 30%)
+			}
+		}
+		.started {
+			background-color: lighten(@orange, 50%);
+			&:hover {
+				background-color: lighten(@orange, 40%)
+			}
+		}
+		.failed, .fail {
+			background-color: lighten(@red, 50%);
+			&:hover {
+				background-color: lighten(@red, 40%)
+			}
+		}
+		.pass {
+			background-color: lighten(@green, 20%);
+			&:hover {
+				background-color: lighten(@green, 10%)
+			}
+		}
+		.test_result {
+			border-top:1px solid @light_light_gray;
+			font-size: 14px;
+			cursor: pointer;
+			&:last-of-type {
+				border-bottom:1px solid @light_light_gray;
+			}
+			> div {
+				min-height:25px;
+				line-height: 25px;
+				&.test_details {
+					background-color: @white;
+				}
+			}
+			.title {
+				font-family: Helvetica;
+				font-size: 16px;
+			}
+			.workflow_title {
+				height: 100%;
+				position: absolute;
+			}
+		}
+	}
+}
+
+#dropzone {
+	height:50px;
+	margin-top:20px;
+	border: 2px dashed @light_gray;
+	.animate_height;
+	&.dragging {
+		background-color: @light_gray;
+		height: 75px;
+	}
+}
+
+.dropzone {
+	height:6px;
+	&.dragging {
+		border: 3px solid @light_gray;
+	}
+
+}
+
+.add_dependency {
+	display: block;
+	height: 80px;
+	text-align: center;
+	color: @light_gray;
+	text-decoration: none !important;
+	&:hover {
+		background-color: @light_light_gray;
+		color: @gray;
+	}
+	h1, h3 {
+		margin: 0;
+		line-height: 80px;
+	}
+	&.dashboard_view {
+		h1, h3 {
+			line-height: 26px;
+		}
+	}
+	&.cta {
+		background-color: @orange;
+		color: @white;
+	}
+}
+

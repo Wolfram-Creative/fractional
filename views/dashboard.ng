@@ -1,0 +1,177 @@
+<div class="responsive_container">
+	<div id="dashboard" class="fractional_row padding_50_top">
+		<div class="three_quarters columns padding_20_right">
+			<!-- TEST RESULT OVERVIEW -->
+			<div id="test_result_overview" class="fractional_row drop_in margin_20_bottom" ng-if="root.tests.length">
+				<div class="one_fifth small_one_fifth columns tests pending_tests_count" ng-click="test_filter.results = 'pending'">
+					<div class="test_count pending">
+						<div class="drop_in_enter slide_in_leave count" ng-if="pending_tests.length">
+							{{pending_tests.length}}
+						</div>
+						<div class="drop_in_enter slide_in_leave count" ng-if="!pending_tests.length">
+							0
+						</div>
+					</div>
+					<span class="title margin_10_left hide_small">Pending Tests</span>
+				</div>
+				<div class="one_fifth small_one_fifth columns tests started_tests_count" ng-click="test_filter.results = 'started'">
+					<div class="test_count started">
+						<div class="drop_in_enter slide_in_leave count" ng-if="started_tests.length">
+							{{started_tests.length}}
+						</div>
+						<div class="drop_in_enter slide_in_leave count" ng-if="!started_tests.length">
+							0
+						</div>
+					</div>
+					<span class="title margin_10_left hide_small">Started Tests</span>
+				</div>
+				<div class="one_fifth small_one_fifth columns tests failed_tests_count" ng-click="test_filter.results = 'failed'">
+					<div class="test_count failed">
+						<div class="drop_in_enter slide_in_leave count" ng-if="failed_tests.length">
+							{{failed_tests.length}}
+						</div>
+						<div class="drop_in_enter slide_in_leave count" ng-if="!failed_tests.length">
+							0
+						</div>
+					</div>
+					<span class="title margin_10_left hide_small">Failed Tests</span>
+				</div>
+				<div class="one_fifth small_one_fifth columns tests passed_tests_count" ng-click="test_filter.results = 'pass'">
+					<div class="test_count passed">
+						<div class="drop_in_enter slide_in_leave count" ng-if="passed_tests.length">
+							{{passed_tests.length}}
+						</div>
+						<div class="drop_in_enter slide_in_leave count" ng-if="!passed_tests.length">
+							0
+						</div>
+					</div>
+					<span class="title margin_10_left hide_small">Passed Tests</span>
+				</div>
+				<div class="one_fifth small_one_fifth columns tests passed_tests_count" ng-click="test_filter.results = ''">
+					<div class="test_count all">
+						<div class="drop_in_enter slide_in_leave count" ng-if="root.tests.length">
+							{{root.tests.length}}
+						</div>
+						<div class="drop_in_enter slide_in_leave count" ng-if="!root.tests.length">
+							0
+						</div>
+					</div>
+					<span class="title margin_10_left hide_small">All Tests</span>
+				</div>
+			</div>
+			<!-- TEST RESULT HISTORY -->
+			<div id="test_results">
+				<div class="test_result slide_in" ng-repeat="test in root.tests | orderBy:test_order | filter:test_filter" ng-class="test.results.status">
+					<div class="fractional_row padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
+						<div class="one_quarter columns title">
+							{{test.playlist}}
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.start_date">Start Time:</span>
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.end_date">End Time:</span>
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.duration">Test Length:</span>
+						</div>
+					</div>
+					<div class="fractional_row padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
+						<div class="one_quarter columns">
+							{{test.results.status}}
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.end_date">{{test.results.start_date | date:'medium'}}</span>
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.end_date">{{test.results.end_date | date:'medium'}}</span>
+						</div>
+						<div class="one_quarter columns">
+							<span ng-if="test.results.duration">{{test.results.duration | duration}}</span>
+						</div>
+					</div>
+					<div class="fractional_row test_details fade_in padding_10_top padding_10_bottom" ng-if="test.expanded">
+						<div class="one_quarter columns padding_10_right">
+						</div>
+						<div class="three_quarters columns text_center">
+							<div class="one_half columns title">Workflows</div>
+							<div class="one_half columns title">Tasks</div>
+						</div>
+						<div class="one column margin_10_bottom" ng-repeat="workflow in test.workflows">
+							<div class="one_quarter columns">
+							</div>
+							<div class="three_quarters columns" ng-class="workflow.results.status">
+								<div class="one column">
+									<div class="one_half columns padding_10_left workflow_title" ng-click="showResults(workflow)">
+										{{workflow.workflow}}: 
+										<span class="bold">{{workflow.results.status}}</span>
+									</div>
+									<div class="one_half columns">
+										<div class="one column padding_10_left" ng-repeat="task in workflow.tasks" ng-class="task.results.status" ng-click="showResults(task)">
+											{{task.task}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="test_CTAs one columns">
+							<div class="one_half columns"></div>
+							<div class="one_quarter columns padding_10_left">
+								<span class="button" ng-click="deleteTest(test._id)">Delete Test Results</span>
+							</div>
+							<div class="one_quarter columns padding_10_left">
+								<span class="button" ng-click="createTest(test.playlist_id)" ng-if="test.results.status !== 'pending' && test.results.status !== 'started'">Test Again</span>
+								<span class="button" ng-click="showTestModal(test._id)" ng-if="test.results.status === 'started'">Continue Test</span>
+								<span class="button" ng-click="showTestModal(test._id)" ng-if="test.results.status === 'pending'">Start Test</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="one_quarter columns">
+			<div>
+				<a href="" ng-click="showPlaylists()" class="add_dependency cta margin_5_bottom">
+					<h1>Run Test</h1>
+				</a>
+			</div>
+			<!-- LIST OF PLAYLISTS -->
+			<div class="playlist_list dashboard_view margin_20_bottom" ng-if="show_playlists">
+				<div class="fractional_row">
+					<div class="columns" ng-class="search.playlist.length ? 'four_fifths padding_5_right' : 'one' ">
+						<input class="search_bar" placeholder="search" ng-model="search.playlist" ng-escape-key="search = ''" ng-focus-me="run_test_clicked">
+					</div>
+					<div class="columns" ng-class="search.playlist.length ? 'one_fifth' : 'display_none' ">
+						<span class="button btn-32 ex" ng-click="search = ''">&#x2715</span>
+					</div>
+				</div>
+				<div class="search_results margin_10_bottom">
+					<div class="fractional_row playlist fade_in" ng-repeat="playlist in root.playlists  | filter:search">
+						<div ng-click="createTest(playlist._id)" class="three_quarters small_three_quarters columns playlist_title padding_20_left padding_20_right">
+							<span>{{playlist.playlist}}</span>
+						</div>
+					</div>
+				</div>
+				<span class="button" ng-click="hidePlaylists()">Cancel</span>
+			</div>
+			<div>
+				<a href="/tasks" class="add_dependency dashboard_view">
+					<h3>Step 1:</h3>
+					<h1>Create Task</h1>
+				</a>
+			</div>
+			<div ng-if="root.tasks.length">
+				<a href="/workflows" class="add_dependency dashboard_view">
+				<h3>Step 2:</h3>
+					<h1>Create Workflow</h1>
+				</a>
+			</div>
+			<div ng-if="root.workflows.length  && root.tasks.length">
+				<a href="/playlists" class="add_dependency dashboard_view">
+				<h3>Step 3:</h3>
+					<h1>Create Playlist</h1>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

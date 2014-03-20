@@ -1,0 +1,462 @@
+@white: #fff;
+@white_50: rgba(255, 255, 255, .5);
+@green: #BCD695;
+@black: #000000;
+@mostly_black: #111111;
+@dark_gray: #333333;
+@gray: #999999;
+@light_gray: rgb(210, 210, 210);
+@light_light_gray: rgb(230, 230, 230);
+@gold: #998260;
+@orange: #F15700;
+@yellow: #FFEB00;
+@red: #E70B01;
+@blue: #6BA0FF;
+
+@import 'plugins/normalize'; 
+@import 'plugins/fractional'; 
+@import 'plugins/css3';
+
+
+body {
+  font-size: 12px;
+  background: @white;
+  color: @black;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica !important;
+}
+
+span[class*='icon-'] {
+  display: block;
+}
+
+i[class*='icon-'] {
+  display: inline-block;
+}
+
+@import 'sprites/icon'; 
+
+h1,h2,h3,h4,h5 {
+  text-align: center;
+  font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica !important;
+  font-weight: normal;
+} 
+
+.gold {
+  color: @gold;
+} 
+
+img {
+  max-width: 100%;
+} 
+
+.link {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+.animate_width {
+  .transition(width .5s);
+}
+
+.animate_height {
+  .transition(height .5s);
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.select {
+  -webkit-touch-callout: all;
+  -webkit-user-select: all;
+  -khtml-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+button, .button {
+  background-color: @black; 
+  width: 100%;
+  height:45px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 0;
+  color: @white;
+  cursor: pointer;
+  display: block;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  .transition(background-color .3s);
+  &:hover {
+    background-color: mostly_black;
+  }
+  &.btn-32 {
+    height: 32px;
+    line-height: 32px;
+  }
+  &.ex {
+    font-size: 18px;
+  }
+  &.plus {
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: lighten(@black, 20%);
+  }
+  &.green {
+    background-color: @green;
+  }
+  &[disabled] {
+    opacity: .3;
+  }
+}
+
+select {
+  height: 26px !important;
+  padding-left:5px;
+  padding-right:20px;
+  font-size: 13px !important;
+  border: 1px solid #BBB;
+  border-radius: 5px !important;
+  background-color: #FFF !important;
+  -webkit-appearance: none;
+  -moz-appearance: window;
+  appearance: none;
+  background: #FFF url(/img/icon-caret-gray.png) no-repeat right !important;
+  background-position-x: inherit;
+  &::-ms-expand {
+    display: none;
+  }
+}
+@-moz-document url-prefix() {
+  .css-select-moz{
+    display: block;
+    height: 30px;
+    // padding: 0px 20px 6px 5px;
+    padding: 0;
+    font-size: 13px;
+    background: #FFF url(/img/icon-caret-gray.png) no-repeat right !important;
+    background-position-x: inherit;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    background-color: #FFF;
+  }
+  select {
+    height: 28px !important;
+    border: 0 !important;
+    padding: 5px 20px 3px 5px !important;
+    background: transparent;
+    outline: 0 !important;
+    -moz-box-sizing: border-box;
+    .no-select;
+  }
+} 
+
+input {
+	width:100%; 
+	height:45px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left:10px;
+  border:0;
+  background-color: @light_light_gray;
+  &.ng-valid.ng-dirty {
+    border-left:3px solid @green;
+  }
+  &.ng-invalid {
+    border-left:3px solid red;
+    &.ng-pristine {
+      border:0;
+    }
+  }
+  &:required {
+    box-shadow:none;
+  }
+  &.search_bar {
+    background-color: transparent;
+    border: 1px solid @light_light_gray !important;
+    font-size: 14px;
+    height: 32px;
+
+  }
+}
+
+pre {
+  background-color: @black;
+  color: @white;
+  padding: 20px;
+  margin: 0;
+  .no-select;
+  span {
+    float: left;
+    width: 100%;
+    display: block;
+    .select;
+  }
+}
+
+
+@-webkit-keyframes fade_in {
+  from { 
+    opacity:0; 
+  }
+  to { 
+    opacity:1; 
+  }
+}
+@keyframes fade_in {
+  from { 
+    opacity:0; 
+  }
+  to { 
+    opacity:1; 
+  }
+}
+@-webkit-keyframes drop_in {
+  from { 
+    .transform(translateY(-50px));
+    opacity:0; 
+  }
+  to { 
+    .transform(translateY(0));
+    opacity:1; 
+  }
+}
+@keyframes drop_in {
+  from { 
+    .transform(translateY(-50px));
+    opacity:0;
+  }
+  to { 
+    .transform(translateY(0));
+    opacity:1; 
+  }
+}
+@-webkit-keyframes slide_in {
+  from { 
+    .transform(translateX(-100%));
+    opacity: 0;
+  }
+  to { 
+    .transform(translateX(0px)); 
+    opacity: 1;
+  }
+}
+@keyframes slide_in {
+  from { 
+    .transform(translateX(-100%)); 
+    opacity: 0;
+  }
+  to { 
+    .transform(translateX(0px)); 
+    opacity: 1;
+  }
+}
+@-webkit-keyframes roll_in {
+  from { 
+    .transform(translateX(-100%)rotate(-360deg));
+    opacity: 0;
+  }
+  to { 
+    .transform(translateX(0px)rotate(0deg)); 
+    opacity: 1;
+  }
+}
+@keyframes roll_in {
+  from { 
+    transform: translateX(-100%)rotate(-360deg); 
+    opacity: 0;
+  }
+  to { 
+    transform: translateX(0px)rotate(0deg);
+    opacity: 1;
+  }
+}
+.slide_in {
+  &.ng-enter {
+    -webkit-animation: slide_in .5s;
+    animation: slide_in .5s;
+  }
+  &.ng-leave {
+    -webkit-animation: slide_in .5s reverse; 
+    animation: slide_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  &.ng-leave-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  } 
+}
+.slide_in_enter {
+  &.ng-enter {
+    -webkit-animation: slide_in .5s;
+    animation: slide_in .5s;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+
+.slide_in_leave {
+  &.ng-leave {
+    -webkit-animation: slide_in .5s reverse; 
+    animation: slide_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+.roll_in {
+  &.ng-enter {
+    -webkit-animation: roll_in .5s;
+    animation: roll_in .5s;
+  }
+  &.ng-leave {
+    -webkit-animation: roll_in .5s reverse; 
+    animation: roll_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  &.ng-leave-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  } 
+}
+.roll_in_enter {
+  &.ng-enter {
+    -webkit-animation: roll_in .5s;
+    animation: roll_in .5s;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+
+.roll_in_leave {
+  &.ng-leave {
+    -webkit-animation: roll_in .5s reverse; 
+    animation: roll_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+.fade_in {
+  &.ng-enter {
+    -webkit-animation: fade_in .5s;
+    animation: fade_in .5s;
+  }
+  &.ng-leave {
+    -webkit-animation: fade_in .5s reverse; 
+    animation: fade_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  &.ng-leave-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  } 
+}
+.fade_in_enter {
+  &.ng-enter {
+    -webkit-animation: fade_in .5s;
+    animation: fade_in .5s;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+
+.fade_in_leave {
+  &.ng-leave {
+    -webkit-animation: fade_in .5s reverse; 
+    animation: fade_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+.drop_in {
+  &.ng-enter {
+    -webkit-animation: drop_in .5s;
+    animation: drop_in .5s;
+  }
+  &.ng-leave {
+    -webkit-animation: drop_in .5s reverse; 
+    animation: drop_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  &.ng-leave-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  } 
+}
+.drop_in_enter {
+  &.ng-enter {
+    -webkit-animation: drop_in .5s;
+    animation: drop_in .5s;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+
+.drop_in_leave {
+  &.ng-leave {
+    -webkit-animation: drop_in .5s reverse; 
+    animation: drop_in .5s reverse;
+  }
+  &.ng-enter-stagger {
+    -webkit-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+}
+
+@import 'main/header'; 
+@import 'main/body'; 
+@import 'main/footer'; 
+@import 'main/modal'; 
+
+
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    outline: none !important;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+i{
+  &.centered {
+    display: block;
+  }
+}

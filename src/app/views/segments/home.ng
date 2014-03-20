@@ -1,0 +1,12 @@
+<div id="main">
+	<div class="responsive_container">
+		<div class="fractional_row" id="hero"></div>
+	</div>
+</div>
+<div id="info">
+	<div class="responsive_container">
+		<div class="fractional_row text_align_center padding_50_top">
+			<h1>fractional.CSS</h1>
+		</div>
+	</div>
+</div> 

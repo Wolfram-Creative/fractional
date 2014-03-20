@@ -1,0 +1,117 @@
+<div class="responsive_container">
+	<div id="playlist_creator" class="fractional_row padding_50_top">
+
+		<!-- LIST OF PLAYLISTS -->
+		<div class="one_quarter columns playlist_list">
+			<h2>Playlists</h2>
+			<div class="fractional_row">
+				<div class="columns" ng-class="playlist_search.playlist.length ? 'four_fifths padding_5_right' : 'one' ">
+					<input class="search_bar" placeholder="filter playlists" ng-model="playlist_search.playlist" ng-escape-key="playlist_search = ''">
+				</div>
+				<div class="columns" ng-class="playlist_search.playlist.length ? 'one_fifth' : 'display_none' ">
+					<span class="button btn-32 ex" ng-click="playlist_search = ''">&#x2715</span>
+				</div>
+			</div>
+			<div class="fractional_row playlist fade_in" ng-repeat="playlist in root.playlists | filter:playlist_search">
+				<div ng-click="loadPlaylistToEdit(playlist._id)" class="three_quarters small_three_quarters columns playlist_title padding_20_left padding_20_right">
+					<span>{{playlist.playlist}}</span>
+				</div>
+				<div class="one_quarter small_one_quarter columns padding_5_left">
+					<button ng-click="removePlaylist(playlist._id)">Delete</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- PLAYLIST EDITOR CREATOR -->
+	    <div class="one_half columns padding_20_left padding_20_right">
+
+			<h1>Create a playlist</h1>
+		    <div class="fractional_row padding_10_bottom">
+		    	<div class="one_half columns padding_2_right">
+					<input type="text" autocomplete="off" placeholder="Playlist Name" ng-model="playlist.playlist" required/>
+		        </div>
+		    </div>
+
+			<!-- LEGEND -->
+			<div class="fractional_row workflow_legend" ng-if="playlist.workflows.length">
+				<div class="one_twelfth columns padding_10_right key ">Order</div>
+				<div class="one_quarter columns value">Workflow</div>
+				<div class="one_quarter columns">Starting Task</div>
+				<div class="one_quarter columns">Ending Task</div>
+				<div class="one_sixth columns"></div>
+			</div>
+
+			<!-- LOOP THROUGH WORKFLOWS -->
+			<div ng-repeat="(key, val) in playlist.workflows" drag-id="{{val._id}}" reorder="{{key}}" ng-drag>
+				<div class="dropzone" ng-drop="insertWorkflowBefore(key)"></div>
+				<div class="fractional_row workflow">
+					<div class="one_twelfth columns padding_10_left ">
+						{{(key * 1) + 1}}
+					</div>
+					<div class="one_quarter columns padding_10_left">
+						{{val.workflow}}
+					</div>
+					<div class="one_quarter columns padding_10_left">
+						<span class="css-select-moz">
+							<select ng-model="val.starting_task_index">
+								<option ng-repeat="(_key, _val) in val.tasks" value="{{_key}}" ng-selected="val.starting_task_index == _key" ng-disabled="_key > val.ending_task_index">{{Number(_key) + 1}} : {{_val.task}}</option>
+							</select>
+						</span>
+					</div>
+					<div class="one_quarter columns padding_10_left">
+						<span class="css-select-moz">
+							<select ng-model="val.ending_task_index">
+								<option ng-repeat="(_key, _val) in val.tasks" value="{{_key}}" ng-selected="val.ending_task_index == _key" ng-disabled="_key < val.starting_task_index">{{Number(_key) + 1}} : {{_val.task}}</option>
+							</select>
+						</span>
+					</div>
+					<div class="one_sixth columns padding_10_left">
+						<span class="button" ng-click="removeWorkflow(key)">Remove</span>
+					</div>
+				</div>
+		    </div>
+			<div class="dropzone" ng-drop="insertWorkflowBefore(playlist.workflows.length)"></div>
+			<!-- DROPZONE! -->
+		    <div class="fractional_row" id="dropzone" ng-drop="addWorkflowToPlaylist()" ng-show="playlist.playlist.length">
+		    </div>
+
+			<!-- CREATE CTA -->
+		    <div class="one column margin_20_top" ng-if="!editing">
+               <span class="button" ng-click="createPlaylist()">Create playlist</span>
+            </div>
+
+			<!-- EDIT/CANCEL EDITING CTA -->
+            <div class="one column margin_20_top" ng-if="editing">
+            	<div class="one_third columns padding_5_right">
+            		<span class="button" ng-click="resetForm()">cancel</span>
+            	</div>
+            	<div class="two_thirds columns padding_5_left">
+					<span class="button" ng-click="editPlaylist()">Save Changes</span>
+            	</div>
+            </div>
+
+		</div>
+
+
+		<!-- LIST OF WORKFLOWS -->
+		<div class="one_quarter columns workflow_list">
+			<h2>Workflows</h2>
+			<div class="fractional_row">
+				<div class="columns" ng-class="workflow_search.workflow.length ? 'four_fifths padding_5_right' : 'one' ">
+					<input class="search_bar" placeholder="filter workflows" ng-model="workflow_search.workflow" ng-escape-key="workflow_search = ''">
+				</div>
+				<div class="columns" ng-class="workflow_search.workflow.length ? 'one_fifth' : 'display_none' ">
+					<span class="button btn-32 ex" ng-click="workflow_search = ''">&#x2715</span>
+				</div>
+			</div>
+			<div drag-id="{{workflow._id}}" class="fractional_row workflow fade_in" ng-repeat="workflow in root.workflows | filter:workflow_search" ng-drag>
+				<div class="task_title padding_20_left padding_20_right">
+					<span>{{workflow.workflow}}</span>
+				</div>
+			</div>
+			<a href="/workflows" class="add_dependency" ng-if="!root.workflows.length">
+				<h1>Create Workflow</h1>
+			</a>
+		</div>
+	</div>
+</div>
