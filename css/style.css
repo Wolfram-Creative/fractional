@@ -2952,9 +2952,9 @@ pre span {
 }
 /* line 36, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works span.frac {
-  cursor: default;
+  cursor: pointer;
   display: inline-block;
-  font-size: 10px;
+  font-size: 11px;
   background: #dbf6a5;
   color: #999999;
   min-width: 25px;
@@ -2967,26 +2967,27 @@ pre span {
 }
 /* line 49, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works span.frac.lcd {
+  cursor: default;
   background: #f15700;
   color: #ffffff;
 }
-/* line 55, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 56, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column,
 #home #how-it-works .columns {
   padding: 0 5px;
   margin-bottom: 5px;
 }
-/* line 58, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 59, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:first-of-type,
 #home #how-it-works .columns:first-of-type {
   padding-left: 0;
 }
-/* line 61, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 62, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:last-of-type,
 #home #how-it-works .columns:last-of-type {
   padding-right: 0;
 }
-/* line 64, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 65, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span,
 #home #how-it-works .columns span {
   display: block;
@@ -2994,13 +2995,13 @@ pre span {
   background-color: #e6e6e6;
   word-break: break-all;
 }
-/* line 69, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 70, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span:hover,
 #home #how-it-works .columns span:hover {
   background-color: #dbf6a5;
   color: #999999;
 }
-/* line 74, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 75, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column,
 #home #how-it-works .columns .column,
 #home #how-it-works .column .columns,

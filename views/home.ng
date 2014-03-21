@@ -25,11 +25,16 @@
 			<p><span class="frac">1</span></p>
 			<div class="fractional_row">
 				<div class="one column" data-show-html="true">
-					<span>.one, .whole</span>
+					<span>.one</span>
 				</div>
 			</div>
-<!-- HALFS -->
-			<h2 class="text_left" data-show-html="true">Halfs</h2>
+			<div class="fractional_row">
+				<div class="whole column" data-show-html="true">
+					<span>.whole</span>
+				</div>
+			</div>
+<!-- HALF -->
+			<h2 class="text_left" data-show-html="true">Half</h2>
 			<p><span class="frac">1/2</span><span class="frac lcd">1</span</p>
 			<div class="fractional_row">
 				<div class="one_half columns" data-show-html="true">
@@ -132,7 +137,7 @@
 				</div>
 			</div>
 <!-- FOURTHS -->
-			<h2 class="text_left" data-show-html="true">Fourths</h2>
+			<h2 class="text_left" data-show-html="true">Fourths/Quarters</h2>
 			<p><span class="frac">1/4</span><span class="frac lcd">1/2</span><span class="frac">3/4</span><span class="frac lcd">1</span</p>
 			<div class="fractional_row">
 				<div class="one_fourth columns" data-show-html="true">
@@ -177,7 +182,7 @@
 			</div>
 <!-- Fifths -->
 			<h2 class="text_left" data-show-html="true">Fifths</h2>
-			<p><span class="frac">1/5</span><span class="frac">2/5</span><span class="frac">3/5</span><span class="frac">4/5</span></p>
+			<p><span class="frac">1/5</span><span class="frac">2/5</span><span class="frac">3/5</span><span class="frac">4/5</span><span class="frac lcd">1</span></p>
 			<div class="fractional_row">
 				<div class="one_fifth columns" data-show-html="true">
 					<span>.one_fifth</span>
