@@ -8,11 +8,14 @@
 		<span ng-repeat="snippet in root.modal.code_snippets">{{snippet}}</span>
 	</pre>
 	<div class="fractional_row margin_50_bottom">
-		<div class="columns" ng-class="root.modal.button_b ? 'one_half padding_10_right' : 'whole'" ng-if="root.modal.button_a">
+		<div class="one_third columns padding_5_right">
 			<a ng-href="{{root.modal.button_a.link}}" target="_blank"><button>{{root.modal.button_a.text}}</button></a>
 		</div>
-		<div class="columns" ng-class="root.modal.button_a ? 'one_half padding_10_left' : 'whole'" ng-if="root.modal.button_b">
+		<div class="one_third columns padding_5_right">
 			<a ng-href="{{root.modal.button_b.link}}" target="_blank"><button>{{root.modal.button_b.text}}</button></a>
+		</div>
+		<div class="one_third columns">
+			<a ng-href="{{root.modal.button_c.link}}" target="_blank"><button>{{root.modal.button_c.text}}</button></a>
 		</div>
 	</div>
 	<div class="fractional_row">

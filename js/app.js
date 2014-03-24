@@ -39,6 +39,10 @@ app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', functio
 				button_b : {
 					link: '/fractional.css',
 					text: 'fractional.css(49kb)'
+				},
+				button_c : {
+					link: '/fractional.less',
+					text: 'fractional.less(30kb)'
 				}
 			};
 		}
@@ -77,10 +81,6 @@ app.config(['$routeProvider', '$locationProvider', 'templatesProvider', function
 
     $routeProvider
         .when('/', {
-            templateUrl: templates.get('home'),
-            controller: 'HomeController'
-        })
-        .when('/how-it-works', {
             templateUrl: templates.get('home'),
             controller: 'HomeController'
         })
@@ -123,7 +123,7 @@ app.controller("HeaderController", ['$scope', '$rootScope', '$location', '_$loca
 	});
 }]); 
 
-app.controller("HeroController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+app.controller("NavigationController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
 	'use strict';
 
 	angular.extend($rootScope, {
@@ -131,11 +131,7 @@ app.controller("HeroController", ['$scope', '$rootScope', '$location', function(
 
 	// Set methods and default models
 	angular.extend($scope, {
-		root: $rootScope,
-		hero: {
-			text: 'Common-sense responsive grid system for rapid development',
-			img: '/img/fractional-1400.png'
-		}
+		root: $rootScope
 	});
 
 	if ($scope.root.logged_in) {
@@ -149,13 +145,28 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 
 	// Set Title and active page
 	angular.extend($rootScope, {
-		title: 'How it works',
-		active_page: 'how-it-works'
+		title: 'Home',
+		active_page: 'home'
 	});
 
 	// Set methods and default models
 	angular.extend($scope, {
-		root: $rootScope
+		root: $rootScope,
+		hero: {
+			text: 'Common-sense responsive grid system for rapid development',
+			img: '/img/fractional-1400.png'
+		},
+		scrollStartEnd : function (scroll, start_fade, end_fade) {
+			if (scroll <= start_fade) {
+				return 1;
+			} else if (scroll > start_fade && scroll < end_fade) {
+				var difference = (end_fade - start_fade),
+					scroll_minus_min = scroll - start_fade;
+				return 1 - (scroll_minus_min/difference);
+			} else if (scroll >= end_fade) {
+				return 0;
+			}
+		}
 	});
 
 	// if ($scope.root.logged_in) {
@@ -239,7 +250,6 @@ app.directive('showHtml', ['$window', function ($window) {
                 emmet = element + '.' + attr_class.replace(/ /g, '.'),
                 $this = angular.element(elem),
                 code_snippets = [ html, ' ', emmet ];
-            console.log(emmet);
             $this.on('click', function () {
                 $scope.$apply(function () {
                     $scope.root.modal = {
@@ -321,21 +331,21 @@ app.directive('ngHeader', ['templates', function (templates) {
 	};
 }]);
 
-app.directive('ngHero', ['templates', function (templates) {
-	'use strict';
-	return {
-		restrict: 'A',
-		templateUrl: templates.get('hero'),
-		controller: 'HeroController'
-	};
-}]);
-
 app.directive('ngModal', ['templates', function (templates) {
 	'use strict';
 	return {
 		restrict: 'A',
 		templateUrl: templates.get('modal_overlay'),
 		controller: 'ModalController'
+	};
+}]);
+
+app.directive('ngNavigation', ['templates', function (templates) {
+	'use strict';
+	return {
+		restrict: 'A',
+		templateUrl: templates.get('navigation'),
+		controller: 'NavigationController'
 	};
 }]);
 

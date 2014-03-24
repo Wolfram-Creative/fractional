@@ -1,10 +1,10 @@
-<section id="hero" class="padding_30_top padding_30_bottom small_padding_20">
-	<div class="responsive_container">
+<section id="hero" class="padding_30_top padding_30_bottom small_padding_20" scroll-position="scroll" style="background-position-y: {{scroll/6 - 50}}px;">
+	<div class="responsive_container" style="top: {{scroll/6}}px; opacity: {{scrollStartEnd(scroll, 150, 300)}}">
 		<div class="fractional_row text_align_center padding_20">
 			<div class="two_thirds medium_large_one_third columns logo">
-				<img ng-src="{{hero.img}}">
+				<img ng-src="{{hero.img}}" style="top: {{scroll/5}}px;">
 			</div>
-			<div class="one_third medium_large_two_thirds columns tagline padding_20 large_padding_50_top">
+			<div class="one_third medium_large_two_thirds columns tagline padding_20 large_padding_50_top"  style="top: {{scroll/3}}px;">
 				{{hero.text}}
 			</div>
 		</div>
@@ -14,12 +14,7 @@
 	<section id="how-it-works">
 		<div class="responsive_container small_padding_5">
 
-						<h1>How It Works</h1>
-						<p>Let's start with general desktop views. This includes nesting columns inside of columns.</p>
-						<p>The column and columns namespace is interchangeable. At it's core, fractional uses the least common denominators. There are no 2/8<sup>ths</sup>, or 2/4<sup>ths</sup>; the least common denominator would mean that 2/8 = 1/4, and 2/4 = 1/2. This helps keep your code clean.</p>
-						<p>There are a few things that are very important to note here. Everything is relative. This is important in order to have everthing flow responsive. There is no padding, and no margin. If you want margins, add them. If you want padding, add it. If you want to have a full width row, do NOT add any lateral marging. It will break the system. If you want space between your columns, add padding and add a div inside with your content.</p>
-						<p>What's amazing about this is that you aren't stuck with the same denominator. If you want to have 1/2 + 1/4 + 1/4, you can. If you want to then have 1/3 + 1/3 + 1/3 inside of the 1/2, go ahead. Try 1/5 + 1/10 + 7/10... It works.</p>
-
+			<h1>How It Works</h1>
 		</div>
 	</section>
 </div> 

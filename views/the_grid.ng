@@ -3,6 +3,18 @@
 		<div class="responsive_container">
 
 			<h1>The Grid</h1>
+			<p>Let's start with general desktop views. This includes nesting columns inside of columns.</p>
+			<p>The column and columns namespace is interchangeable. At it's core, fractional uses the least common denominators. There are no 2/8<sup>ths</sup>, or 2/4<sup>ths</sup>; the least common denominator would mean that 2/8 = 1/4, and 2/4 = 1/2. This helps keep your code clean.</p>
+			<p>There are a few things that are very important to note here:</p>
+
+			<ul>
+				<li>All elements inside of .fractional_row are relative. This is important in order to have everthing flow responsively.</li>
+				<li>There is no padding, and no margin. If you want margins, add them. If you want padding, add it.</li>
+				<li>If you want to have a full width row, do NOT add any lateral marging.</li>
+				<li>It will break the system. If you want space between your columns, add padding and add a div inside with your content.</li>
+			</ul>
+			<p>What's amazing about this is that you aren't stuck with the same denominator. If you want to have 1/2 + 1/4 + 1/4, you can. If you want to then have 1/3 + 1/3 + 1/3 inside of the 1/2, go ahead. Try 1/5 + 1/10 + 7/10... It works.</p>
+
 <!-- WHOLE --> 
 			<h2 class="text_left" data-show-html="true">Whole</h2>
 			<p>A single column. Not much to look at here...</p>
@@ -512,27 +524,27 @@
 				</div>
 			</div>
 			<div class="fractional_row">
-				<div class="four_ninths columns" data-show-html="true">
-					<span>.four_ninths</span>
+				<div class="four_ninths small_one_half columns" data-show-html="true">
+					<span><span class="hide_small">.four_ninths</span>.small_one_half</span>
 				</div>
-				<div class="five_ninths columns" data-show-html="true">
-					<span>.five_ninths</span>
+				<div class="five_ninths small_one_half columns nest">
+					<div class="one_third small_one_third columns" data-show-html="true">
+						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+					</div>
+					<div class="one_third small_one_third columns" data-show-html="true">
+						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+					</div>
+					<div class="one_third small_one_third columns" data-show-html="true">
+						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+					</div>
 				</div>
 			</div>
 			<div class="fractional_row">
-				<div class="five_ninths small_one_half columns" data-show-html="true">
-					<span><span class="hide_mobile">.five_ninths</span>.small_one_half</span>
+				<div class="five_ninths columns" data-show-html="true">
+					<span>.five_ninths</span>
 				</div>
-				<div class="four_ninths small_one_half columns nest">
-					<div class="one_third small_one_third columns" data-show-html="true">
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
-					</div>
-					<div class="one_third small_one_third columns" data-show-html="true">
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
-					</div>
-					<div class="one_third small_one_third columns" data-show-html="true">
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
-					</div>
+				<div class="four_ninths columns" data-show-html="true">
+					<span>.four_ninths</span>
 				</div>
 			</div>
 			<div class="fractional_row">

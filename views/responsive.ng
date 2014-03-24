@@ -4,7 +4,7 @@
 			<h1>Small, Medium, & Medium Large</h1>
 			<p>When Viewed on a smaller screen(less than 767px), a standard column will break and turn into a whole column. We can use the same fractions as above, but include small_(&lt;767px), medium_(480px - 767px), and medium_large_(768px - 979px)</p>
 
-			<h2 class="text_left" data-show-html="true">Small - &lt;767px</h2>
+			<h2 class="text_left" data-show-html="true">Small: &lt;767px</h2>
 			<div class="fractional_row">
 				<div class="one_fourth small_two_thirds columns" data-show-html="true">
 					<span><span class="hide_small">.one_fourth</span>.small_two_thirds</span>
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 
-			<h2 class="text_left" data-show-html="true">Medium - 480px - 767px</h2>
+			<h2 class="text_left" data-show-html="true">Medium: 480px - 767px</h2>
 			<div class="fractional_row">
 				<div class="three_fourths medium_one_half columns" data-show-html="true">
 					<span><span class="hide_small">.three_fourths</span>.medium_one_half</span>
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 
-			<h2 class="text_left" data-show-html="true">Medium_large = 768px - 979px</h2>
+			<h2 class="text_left" data-show-html="true">Medium Large: 768px - 979px</h2>
 			<div class="fractional_row">
 				<div class="two_thirds medium_large_one_third small_two_thirds columns" data-show-html="true">
 					<span><span class="hide_mobile">.two_thirds</span><span class="hide_small">.medium_large_one_third</span>.small_two_thirds</span>

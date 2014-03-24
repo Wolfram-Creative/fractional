@@ -39,6 +39,10 @@ app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', functio
 				button_b : {
 					link: '/fractional.css',
 					text: 'fractional.css(49kb)'
+				},
+				button_c : {
+					link: '/fractional.less',
+					text: 'fractional.less(30kb)'
 				}
 			};
 		}

@@ -9,7 +9,6 @@ app.directive('showHtml', ['$window', function ($window) {
                 emmet = element + '.' + attr_class.replace(/ /g, '.'),
                 $this = angular.element(elem),
                 code_snippets = [ html, ' ', emmet ];
-            console.log(emmet);
             $this.on('click', function () {
                 $scope.$apply(function () {
                     $scope.root.modal = {

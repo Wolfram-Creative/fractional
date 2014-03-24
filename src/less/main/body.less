@@ -4,6 +4,7 @@
 	ul {
 		list-style: none;
 		margin: 0;
+		padding: 0;
 		li {
 			display: inline-block;
 			margin-right:5px;
@@ -26,6 +27,7 @@
 #hero {
 	background-image: url(/img/math.jpg);
 	background-size: cover;
+	overflow: hidden;
 	> div {
 		background-color: rgba(0, 0, 0, .3);
 		color: @white;
@@ -107,6 +109,9 @@
 				&:hover {
 					background-color: @light_green;
 					color: @gray;
+					span {
+						background: transparent;
+					}
 				}
 				span {
 					display: inline;

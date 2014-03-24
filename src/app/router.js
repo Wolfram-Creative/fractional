@@ -11,10 +11,6 @@ app.config(['$routeProvider', '$locationProvider', 'templatesProvider', function
             templateUrl: templates.get('home'),
             controller: 'HomeController'
         })
-        .when('/how-it-works', {
-            templateUrl: templates.get('home'),
-            controller: 'HomeController'
-        })
         .when('/the-grid', {
             templateUrl: templates.get('the_grid'),
             controller: 'TheGridController'

@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         },
         styles: {
             files: ['src/less/*.less', 'src/less/**/*.less'],
-            tasks: ['less:dev', 'less:build', 'usebanner:build'],
+            tasks: ['less:dev', 'less:build', 'usebanner:build', 'copy:fractional'],
             options: {
                 spawn: false,
             },
@@ -131,6 +131,16 @@ module.exports = function(grunt) {
             flatten: true,
             src: 'src/app/**/*.ng',
             dest: 'views/',
+          }
+        ]
+      },
+      fractional: {
+        files: [
+          {
+             expand: true,
+            flatten: true,
+            src: 'src/less/plugins/fractional.less',
+            dest: ''
           }
         ]
       }
