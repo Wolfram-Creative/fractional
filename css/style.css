@@ -632,8 +632,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
   width: 77.77777777777777%;
 }
 /* line 186, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-.fractional_row .columns.eigth_ninths,
-.fractional_row .column.eigth_ninths {
+.fractional_row .columns.eight_ninths,
+.fractional_row .column.eight_ninths {
   width: 88.88888888888889%;
 }
 /* line 191, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
@@ -902,8 +902,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (max-width: 767px) {
   /* line 394, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.small_eigth_ninths,
-  .fractional_row .column.small_eigth_ninths {
+  .fractional_row .columns.small_eight_ninths,
+  .fractional_row .column.small_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
@@ -1207,8 +1207,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* line 634, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.medium_eigth_ninths,
-  .fractional_row .column.medium_eigth_ninths {
+  .fractional_row .columns.medium_eight_ninths,
+  .fractional_row .column.medium_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
@@ -1498,8 +1498,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   /* line 856, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.medium_large_eigth_ninths,
-  .fractional_row .column.medium_large_eigth_ninths {
+  .fractional_row .columns.medium_large_eight_ninths,
+  .fractional_row .column.medium_large_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
@@ -2959,10 +2959,10 @@ pre span {
   color: #999999;
   min-width: 25px;
   height: 25px;
-  padding: 2px 2px;
+  padding: 2px 4px;
   line-height: 21px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 12px;
   margin-right: 5px;
 }
 /* line 49, /Users/briannoah/Dev/fractional/src/less/main/body.less */
@@ -2988,6 +2988,19 @@ pre span {
   padding-right: 0;
 }
 /* line 65, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column.nest,
+#home #how-it-works .columns.nest {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/* line 70, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column.nest:hover,
+#home #how-it-works .columns.nest:hover {
+  background: #dbf6a5;
+}
+/* line 74, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span,
 #home #how-it-works .columns span {
   display: block;
@@ -2995,18 +3008,40 @@ pre span {
   background-color: #e6e6e6;
   word-break: break-all;
 }
-/* line 70, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 79, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span:hover,
 #home #how-it-works .columns span:hover {
   background-color: #dbf6a5;
   color: #999999;
 }
-/* line 75, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 83, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column span span,
+#home #how-it-works .columns span span {
+  display: inline;
+  background: transparent;
+  padding: 0;
+}
+/* line 89, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column,
 #home #how-it-works .columns .column,
 #home #how-it-works .column .columns,
 #home #how-it-works .columns .columns {
   margin: 0;
+}
+/* line 91, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column .column span,
+#home #how-it-works .columns .column span,
+#home #how-it-works .column .columns span,
+#home #how-it-works .columns .columns span {
+  background: #d2d2d2;
+}
+/* line 93, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column .column span:hover,
+#home #how-it-works .columns .column span:hover,
+#home #how-it-works .column .columns span:hover,
+#home #how-it-works .columns .columns span:hover {
+  background-color: #dbf6a5;
+  color: #999999;
 }
 /* line 1, /Users/briannoah/Dev/fractional/src/less/main/footer.less */
 .main_footer {

@@ -254,8 +254,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
   width: 77.77777777777777%;
 }
 /* line 186, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-.fractional_row .columns.eigth_ninths,
-.fractional_row .column.eigth_ninths {
+.fractional_row .columns.eight_ninths,
+.fractional_row .column.eight_ninths {
   width: 88.88888888888889%;
 }
 /* line 191, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
@@ -524,8 +524,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (max-width: 767px) {
   /* line 394, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.small_eigth_ninths,
-  .fractional_row .column.small_eigth_ninths {
+  .fractional_row .columns.small_eight_ninths,
+  .fractional_row .column.small_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
@@ -829,8 +829,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* line 634, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.medium_eigth_ninths,
-  .fractional_row .column.medium_eigth_ninths {
+  .fractional_row .columns.medium_eight_ninths,
+  .fractional_row .column.medium_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
@@ -1120,8 +1120,8 @@ two_fourths = one_half, so two_fourths doesn't exist.
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   /* line 856, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
-  .fractional_row .columns.medium_large_eigth_ninths,
-  .fractional_row .column.medium_large_eigth_ninths {
+  .fractional_row .columns.medium_large_eight_ninths,
+  .fractional_row .column.medium_large_eight_ninths {
     width: 88.88888888888889% !important;
   }
 }
