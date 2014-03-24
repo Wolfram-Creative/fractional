@@ -20,7 +20,7 @@ function __Object() {
 }
 var _Object = new __Object();
 
-app.run(['$rootScope', '$http', '_$local', '$anchorScroll', function ($rootScope, $http, _$local, $anchorScroll) {
+app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', function ($rootScope, $http, $location, _$local, $anchorScroll) {
 	'use strict';
 
 	// Set up App information
@@ -69,6 +69,7 @@ app.provider('templates', function () {
 
 app.config(['$routeProvider', '$locationProvider', 'templatesProvider', function($routeProvider, $locationProvider, templatesProvider) {
     'use strict';
+    var templates = templatesProvider;
 
     $locationProvider
         .html5Mode(true)
@@ -76,8 +77,20 @@ app.config(['$routeProvider', '$locationProvider', 'templatesProvider', function
 
     $routeProvider
         .when('/', {
-            templateUrl: templatesProvider.get('home'),
+            templateUrl: templates.get('home'),
             controller: 'HomeController'
+        })
+        .when('/how-it-works', {
+            templateUrl: templates.get('home'),
+            controller: 'HomeController'
+        })
+        .when('/the-grid', {
+            templateUrl: templates.get('the_grid'),
+            controller: 'TheGridController'
+        })
+        .when('/responsive', {
+            templateUrl: templates.get('responsive'),
+            controller: 'ResponsiveController'
         })
         .otherwise({ 
             redirectTo: '/' 
@@ -110,12 +123,10 @@ app.controller("HeaderController", ['$scope', '$rootScope', '$location', '_$loca
 	});
 }]); 
 
-app.controller("HomeController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+app.controller("HeroController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
 	'use strict';
 
-	// Set Title and active page
 	angular.extend($rootScope, {
-		title: 'Home'
 	});
 
 	// Set methods and default models
@@ -124,8 +135,7 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 		hero: {
 			text: 'Common-sense responsive grid system for rapid development',
 			img: '/img/fractional-1400.png'
-		},
-		tooltip: ''
+		}
 	});
 
 	if ($scope.root.logged_in) {
@@ -134,6 +144,64 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 
 }]);
 
+app.controller("HomeController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+	'use strict';
+
+	// Set Title and active page
+	angular.extend($rootScope, {
+		title: 'How it works',
+		active_page: 'how-it-works'
+	});
+
+	// Set methods and default models
+	angular.extend($scope, {
+		root: $rootScope
+	});
+
+	// if ($scope.root.logged_in) {
+	// 	$location.path('/dashboard');
+	// }
+
+}]);
+
+app.controller("ResponsiveController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+	'use strict';
+
+	// Set Title and active page
+	angular.extend($rootScope, {
+		title: 'Responsive',
+		active_page: 'responsive'
+	});
+
+	// Set methods and default models
+	angular.extend($scope, {
+		root: $rootScope
+	});
+
+	// if ($scope.root.logged_in) {
+	// 	$location.path('/dashboard');
+	// }
+
+}]);
+app.controller("TheGridController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+	'use strict';
+
+	// Set Title and active page
+	angular.extend($rootScope, {
+		title: 'The Grid',
+		active_page: 'the-grid'
+	});
+
+	// Set methods and default models
+	angular.extend($scope, {
+		root: $rootScope
+	});
+
+	// if ($scope.root.logged_in) {
+	// 	$location.path('/dashboard');
+	// }
+
+}]);
 app.directive('elementHeight', ['$window', function ($window) {
     var $window_element = angular.element($window);
     return {
@@ -168,9 +236,10 @@ app.directive('showHtml', ['$window', function ($window) {
             var attr_class = attrs['class'],
                 element = attrs.$$element.context.localName,
                 html = '<' + element + ' class="' + attr_class + '"></' + element + '>',
-                emmet = element + '.' + attr_class.replace(' ', '.'),
+                emmet = element + '.' + attr_class.replace(/ /g, '.'),
                 $this = angular.element(elem),
                 code_snippets = [ html, ' ', emmet ];
+            console.log(emmet);
             $this.on('click', function () {
                 $scope.$apply(function () {
                     $scope.root.modal = {
@@ -249,6 +318,15 @@ app.directive('ngHeader', ['templates', function (templates) {
 		restrict: 'A',
 		templateUrl: templates.get('header'),
 		controller: 'HeaderController'
+	};
+}]);
+
+app.directive('ngHero', ['templates', function (templates) {
+	'use strict';
+	return {
+		restrict: 'A',
+		templateUrl: templates.get('hero'),
+		controller: 'HeroController'
 	};
 }]);
 

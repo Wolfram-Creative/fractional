@@ -1,10 +1,10 @@
-app.controller("HomeController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+app.controller("ResponsiveController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
 	'use strict';
 
 	// Set Title and active page
 	angular.extend($rootScope, {
-		title: 'How it works',
-		active_page: 'how-it-works'
+		title: 'Responsive',
+		active_page: 'responsive'
 	});
 
 	// Set methods and default models

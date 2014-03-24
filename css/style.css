@@ -1714,13 +1714,13 @@ two_fourths = one_half, so two_fourths doesn't exist.
     display: none !important;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 980px) {
   /* line 1038, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .hide_desktop {
     display: none !important;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 979px) {
   /* line 1043, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .hide_mobile {
     display: none !important;
@@ -1732,7 +1732,7 @@ two_fourths = one_half, so two_fourths doesn't exist.
     display: block !important;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 979px) {
   /* line 1054, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .show_mobile {
     display: block !important;
@@ -2905,52 +2905,81 @@ pre span {
 #header #nav ul li.active a {
   color: #000000;
 }
-/* line 2, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-#home #hero {
+/* line 1, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation {
+  background: #e6e6e6;
+  padding: 10px;
+}
+/* line 4, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 7, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 10, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation ul li a {
+  padding: 5px;
+  color: #999999;
+  font-size: 18px;
+}
+/* line 14, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation ul li a:hover {
+  color: #000000;
+}
+/* line 19, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#navigation ul li.active a {
+  color: #000000;
+}
+/* line 26, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#hero {
   background-image: url(/img/math.jpg);
   background-size: cover;
 }
-/* line 5, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-#home #hero > div {
+/* line 29, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#hero > div {
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
-  /* line 8, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-  #home #hero > div {
+  /* line 32, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+  #hero > div {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 13, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-  #home #hero .logo {
+  /* line 37, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+  #hero .logo {
     padding-top: 22px;
   }
 }
-/* line 18, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-#home #hero .tagline {
+/* line 42, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#hero .tagline {
   font-size: 32px;
   text-align: center;
   font-family: Helvetica;
   font-weight: 100;
 }
 @media screen and (max-width: 767px) {
-  /* line 23, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-  #home #hero .tagline {
+  /* line 47, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+  #hero .tagline {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 1199px) {
-  /* line 26, /Users/briannoah/Dev/fractional/src/less/main/body.less */
-  #home #hero .tagline {
+  /* line 50, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+  #hero .tagline {
     padding-top: 50px !important;
   }
 }
-/* line 32, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 57, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works [data-show-html="true"] {
   cursor: pointer;
 }
-/* line 36, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 61, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works span.frac {
   cursor: pointer;
   display: inline-block;
@@ -2965,29 +2994,29 @@ pre span {
   border-radius: 12px;
   margin-right: 5px;
 }
-/* line 49, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 74, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works span.frac.lcd {
   cursor: default;
   background: #f15700;
   color: #ffffff;
 }
-/* line 56, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 81, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column,
 #home #how-it-works .columns {
   padding: 0 5px;
   margin-bottom: 5px;
 }
-/* line 59, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 84, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:first-of-type,
 #home #how-it-works .columns:first-of-type {
   padding-left: 0;
 }
-/* line 62, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 87, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column:last-of-type,
 #home #how-it-works .columns:last-of-type {
   padding-right: 0;
 }
-/* line 65, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 90, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column.nest,
 #home #how-it-works .columns.nest {
   border-left: 1px solid;
@@ -2995,12 +3024,17 @@ pre span {
   padding-right: 5px;
   padding-left: 5px;
 }
-/* line 70, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 95, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column.nest:hover,
 #home #how-it-works .columns.nest:hover {
   background: #dbf6a5;
 }
-/* line 74, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 98, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+#home #how-it-works .column.nest + .nest,
+#home #how-it-works .columns.nest + .nest {
+  border-left: 0;
+}
+/* line 102, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span,
 #home #how-it-works .columns span {
   display: block;
@@ -3008,34 +3042,34 @@ pre span {
   background-color: #e6e6e6;
   word-break: break-all;
 }
-/* line 79, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 107, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span:hover,
 #home #how-it-works .columns span:hover {
   background-color: #dbf6a5;
   color: #999999;
 }
-/* line 83, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 111, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column span span,
 #home #how-it-works .columns span span {
   display: inline;
   background: transparent;
   padding: 0;
 }
-/* line 89, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 117, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column,
 #home #how-it-works .columns .column,
 #home #how-it-works .column .columns,
 #home #how-it-works .columns .columns {
   margin: 0;
 }
-/* line 91, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 119, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column span,
 #home #how-it-works .columns .column span,
 #home #how-it-works .column .columns span,
 #home #how-it-works .columns .columns span {
   background: #d2d2d2;
 }
-/* line 93, /Users/briannoah/Dev/fractional/src/less/main/body.less */
+/* line 121, /Users/briannoah/Dev/fractional/src/less/main/body.less */
 #home #how-it-works .column .column span:hover,
 #home #how-it-works .columns .column span:hover,
 #home #how-it-works .column .columns span:hover,

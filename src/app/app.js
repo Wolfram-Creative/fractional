@@ -20,7 +20,7 @@ function __Object() {
 }
 var _Object = new __Object();
 
-app.run(['$rootScope', '$http', '_$local', '$anchorScroll', function ($rootScope, $http, _$local, $anchorScroll) {
+app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', function ($rootScope, $http, $location, _$local, $anchorScroll) {
 	'use strict';
 
 	// Set up App information

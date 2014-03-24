@@ -6,9 +6,10 @@ app.directive('showHtml', ['$window', function ($window) {
             var attr_class = attrs['class'],
                 element = attrs.$$element.context.localName,
                 html = '<' + element + ' class="' + attr_class + '"></' + element + '>',
-                emmet = element + '.' + attr_class.replace(' ', '.'),
+                emmet = element + '.' + attr_class.replace(/ /g, '.'),
                 $this = angular.element(elem),
                 code_snippets = [ html, ' ', emmet ];
+            console.log(emmet);
             $this.on('click', function () {
                 $scope.$apply(function () {
                     $scope.root.modal = {

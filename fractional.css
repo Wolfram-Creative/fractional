@@ -1336,13 +1336,13 @@ two_fourths = one_half, so two_fourths doesn't exist.
     display: none !important;
   }
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 980px) {
   /* line 1038, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .hide_desktop {
     display: none !important;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 979px) {
   /* line 1043, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .hide_mobile {
     display: none !important;
@@ -1354,7 +1354,7 @@ two_fourths = one_half, so two_fourths doesn't exist.
     display: block !important;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 979px) {
   /* line 1054, /Users/briannoah/Dev/fractional/src/less/plugins/fractional.less */
   .show_mobile {
     display: block !important;

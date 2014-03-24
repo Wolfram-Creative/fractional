@@ -1,10 +1,10 @@
-app.controller("HomeController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+app.controller("TheGridController", ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
 	'use strict';
 
 	// Set Title and active page
 	angular.extend($rootScope, {
-		title: 'How it works',
-		active_page: 'how-it-works'
+		title: 'The Grid',
+		active_page: 'the-grid'
 	});
 
 	// Set methods and default models
