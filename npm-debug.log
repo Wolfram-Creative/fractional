@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/brianjoshuanoah/.nvm/v0.10.26/bin/node',
+1 verbose cli   '/Users/brianjoshuanoah/.nvm/v0.10.26/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'redis-server' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'redis-server', null ]
+5 verbose cache add name=undefined spec="redis-server" args=["redis-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'redis-server',
+6 verbose parsed url   path: 'redis-server',
+6 verbose parsed url   href: 'redis-server' }
+7 silly lockFile 85ee20ab-redis-server redis-server
+8 verbose lock redis-server /Users/brianjoshuanoah/.npm/85ee20ab-redis-server.lock
+9 silly lockFile 85ee20ab-redis-server redis-server
+10 silly lockFile 85ee20ab-redis-server redis-server
+11 verbose addNamed [ 'redis-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile fcb94d2a-redis-server redis-server@
+14 verbose lock redis-server@ /Users/brianjoshuanoah/.npm/fcb94d2a-redis-server.lock
+15 silly addNameRange { name: 'redis-server', range: '*', hasData: false }
+16 verbose url raw redis-server
+17 verbose url resolving [ 'https://registry.npmjs.org/', './redis-server' ]
+18 verbose url resolved https://registry.npmjs.org/redis-server
+19 info trying registry request attempt 1 at 16:22:09
+20 http GET https://registry.npmjs.org/redis-server
+21 http 404 https://registry.npmjs.org/redis-server
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Tue, 25 Mar 2014 23:22:08 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-lax1429-LAX',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1395789728.776012421,VS0,VS-57,VE29,VE150',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile fcb94d2a-redis-server redis-server@
+24 silly lockFile fcb94d2a-redis-server redis-server@
+25 error 404 'redis-server' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.1.0
+27 error command "/Users/brianjoshuanoah/.nvm/v0.10.26/bin/node" "/Users/brianjoshuanoah/.nvm/v0.10.26/bin/npm" "install" "-g" "redis-server"
+28 error cwd /Users/brianjoshuanoah/Dev/fractional
+29 error node -v v0.10.26
+30 error npm -v 1.4.3
+31 error code E404
+32 verbose exit [ 1, true ]

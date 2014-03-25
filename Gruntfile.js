@@ -8,14 +8,14 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> Created with MEAN stack by Wolfram Creative http://woflframcreative.com */\n'
       },
       build: {
-        src: 'js/app.js',
-        dest: 'js/app.js'
+        src: 'www/js/app.js',
+        dest: 'www/js/app.js'
       }
     },
     concat: {   
         dev: {
             src: ['src/app/app.js', 'src/app/templatesProvider.js', 'src/app/router.js','src/app/**/*.js'],
-            dest: 'js/app.js'
+            dest: 'www/js/app.js'
         }
     },
     less: {
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
                 dumpLineNumbers: 'comments'
             },
             files: {
-                "css/style.css": "src/less/style.less",
-                "fractional.css": "src/less/plugins/fractional.less",
+                "www/css/style.css": "src/less/style.less",
+                "www/downloads/fractional.css": "src/less/plugins/fractional.less",
             }
         },
         prod: {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             },
             files: {
               "css/style.css": "src/less/style.less",
-              "fractional.min.css": "src/less/plugins/fractional.less", 
+              "www/downloads/fractional.min.css": "src/less/plugins/fractional.less", 
             }
         },
         build: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 compress: true
             },
             files: {
-              "fractional.min.css": "src/less/plugins/fractional.less", 
+              "www/downloads/fractional.min.css": "src/less/plugins/fractional.less", 
             }
         }
 
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
     sprite: {
       icon: {
         src: 'src/img/icon/*.png',
-        destImg: 'img/sprites/sprites_icon.png',
+        destImg: 'www/img/sprites/sprites_icon.png',
         destCSS: 'src/less/sprites/icon.less',
         imgPath: '/img/sprites/sprites_icon.png',
         algorithm: 'binary-tree',
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
             },
             files: {
                 // src: ['public/css/*.css', 'public/js/scripts.min.js']
-                src: ['css/*.css']
+                src: ['www/css/*.css']
             }
         },
         build: {
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
             linebreak: true
           },
           files: {
-            src: ['fractional.min.css']
+            src: ['www/downloads/fractional.min.css']
           }
         }
     },
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: 'src/app/**/*.ng',
-            dest: 'views/',
+            dest: 'www/views/',
           }
         ]
       },
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
              expand: true,
             flatten: true,
             src: 'src/less/plugins/fractional.less',
-            dest: ''
+            dest: 'www/downloads/'
           }
         ]
       }
