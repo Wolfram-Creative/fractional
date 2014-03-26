@@ -1,8 +1,13 @@
 {
   "name": "fractional.css",
   "version": "1.0.0",
+  "author": {
+    "name": "Brian Noah",
+    "email": "brianjoshuanoah@gmail.com"  
+  },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/Wolfram-Creative/fractional"
   },
     "dependencies": {
     "express": "*",

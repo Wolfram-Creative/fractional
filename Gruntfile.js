@@ -20,25 +20,25 @@ module.exports = function(grunt) {
     },
     less: {
         dev: {
-            options: {
-                paths: ["less"],
-                dumpLineNumbers: 'comments'
-            },
-            files: {
-                "www/css/style.css": "src/less/style.less",
-                "www/downloads/fractional.css": "src/less/plugins/fractional.less",
-            }
+          options: {
+            paths: ["less"],
+            dumpLineNumbers: 'comments'
+          },
+          files: {
+            "www/css/style.css": "src/less/style.less",
+            "www/downloads/fractional.css": "src/less/plugins/fractional.less",
+          }
         },
         prod: {
-            options: {
-                paths: ["less"],
-                cleancss: true,
-                compress: true
-            },
-            files: {
-              "css/style.css": "src/less/style.less",
-              "www/downloads/fractional.min.css": "src/less/plugins/fractional.less", 
-            }
+          options: {
+            paths: ["less"],
+            cleancss: true,
+            compress: true
+          },
+          files: {
+            "www/css/style.css": "src/less/style.less",
+            "www/downloads/fractional.min.css": "src/less/plugins/fractional.less", 
+          }
         },
         build: {
             options: {
@@ -112,9 +112,9 @@ module.exports = function(grunt) {
             banner: '/* \n' 
               + '<%= pkg.name %> - v-<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>  \n'
               + 'Fractional Grid system \n'
-              + 'Created by Brian Noah brianjoshuanoah@gmail.com for J.Hilburn  \n'
-              + 'Least common denominator is taken into account.  \n'
-              + 'two_fourths = one_half, so two_fourths doesn\'t exist.  \n'
+              + 'Created by Brian Noah brianjoshuanoah@gmail.com in partnership with Wolfram Creative  \n'
+              + 'http://fractional.wolframcreative.com/  \n'
+              + 'https://github.com/Wolfram-Creative/fractional  \n'
               + '*/',
             linebreak: true
           },
@@ -157,7 +157,6 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['sprite','less:dev', 'less:prod', 'concat', 'uglify']);
-
-
+  grunt.registerTask('default', ['sprite', 'less:dev', 'less:build', 'concat', 'usebanner', 'copy']);
+  grunt.registerTask('prod', ['sprite', 'less:dev', 'less:prod', 'less:build', 'concat', 'uglify', 'usebanner', 'copy']);
 };
