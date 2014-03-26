@@ -7,10 +7,10 @@ if (typeof process.env.port !== 'undefined') {
 }
 
 model = require('./models');
-databaseUrl = process.env.databaseUrl;
-mongo_collections = ['users'];
-mongojs = require('mongojs'); 
-db = mongojs(databaseUrl, mongo_collections);
+// databaseUrl = process.env.databaseUrl;
+// mongo_collections = ['users'];
+// mongojs = require('mongojs'); 
+// db = mongojs(databaseUrl, mongo_collections);
 
 var cluster = require('cluster'),
     numCPUs = require('os').cpus().length,
