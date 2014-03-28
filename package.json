@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "author": {
     "name": "Brian Noah",
-    "email": "brianjoshuanoah@gmail.com"  
+    "email": "brianjoshuanoah@gmail.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Wolfram-Creative/fractional"
   },
-    "dependencies": {
+  "dependencies": {
     "express": "*",
     "ejs": "*",
     "mongojs": "~0.10.0",
     "dotenv": "~0.2.4",
     "underscore": "~1.6.0",
     "socket.io": "~0.9.16",
-    "connect-redis": "~1.4.7"
+    "connect-redis": "~1.4.7",
+    "phantomjs": "^1.9.7-1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

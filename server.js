@@ -12,6 +12,24 @@ model = require('./models');
 // mongojs = require('mongojs'); 
 // db = mongojs(databaseUrl, mongo_collections);
 
+var path = require('path');
+var childProcess = require('child_process');
+var phantomjs = require('phantomjs');
+var binPath = phantomjs.path;
+var childArgs = [
+  path.join(__dirname, 'phantom.js'),
+  'http://127.0.0.1:8007/responsive'
+];
+
+childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
+  // handle results
+  console.log('err', err);
+  // console.log('stdout');
+  console.log(stdout);
+  console.log('stderr', stderr);
+});
+
+
 var cluster = require('cluster'),
     numCPUs = require('os').cpus().length,
     express = require('express'),
@@ -107,3 +125,4 @@ app.get('/*', function (req, res) {
 // if (cluster.isWorker) {
     server.listen(app.get('port'));
 // }
+
