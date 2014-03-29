@@ -16,19 +16,6 @@ var path = require('path');
 var childProcess = require('child_process');
 var phantomjs = require('phantomjs');
 var binPath = phantomjs.path;
-var childArgs = [
-  path.join(__dirname, 'phantom.js'),
-  'http://127.0.0.1:8007/responsive'
-];
-
-childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
-  // handle results
-  console.log('err', err);
-  // console.log('stdout');
-  console.log(stdout);
-  console.log('stderr', stderr);
-});
-
 
 var cluster = require('cluster'),
     numCPUs = require('os').cpus().length,
@@ -74,7 +61,17 @@ app.configure(function(){
 
 //APP ROUTING
 app.get('/', function (req, res) {
-    res.render('index.html');
+    if (typeof req.query._escaped_fragment_ !== 'undefined') {
+        var childArgs = [
+          path.join(__dirname, 'phantom.js'),
+          req.headers.host + '/' + req.query._escaped_fragment_
+        ];
+        childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
+          res.send(stdout);
+        });
+    } else {
+        res.render('index.html');
+    }
 });
 
 // Handle API routing up to 3 layers
@@ -123,6 +120,8 @@ app.get('/*', function (req, res) {
 // } 
 
 // if (cluster.isWorker) {
-    server.listen(app.get('port'));
+    server.listen(app.get('port'), function () {
+        console.log('App listening on port ' + app.get('port'));
+    });
 // }
 
