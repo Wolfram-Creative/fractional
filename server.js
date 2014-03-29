@@ -61,16 +61,11 @@ app.configure(function(){
 
 //APP ROUTING
 app.get('/', function (req, res) {
-    var uri = 'http://';
-    if(typeof req.connection.encrypted !== 'undefined') {
-        uri = 'https://';
-    }
     if (typeof req.query._escaped_fragment_ !== 'undefined') {
         var childArgs = [
             path.join(__dirname, 'phantom.js'),
-            uri + req.headers.host + req.query._escaped_fragment_
+            req.protocol + '://' + req.headers.host + req.query._escaped_fragment_
         ];
-        console.log(uri + req.headers.host + req.query._escaped_fragment_)
         childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
             res.send(stdout);
         });
