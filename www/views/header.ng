@@ -7,7 +7,8 @@
 			</a>
 		</div>
 		<div class="three_quarters small_three_quarters medium_two_thirds columns text_right nav_right">
-			<span class="link" ng-click="root.showDownload()">Download</span>
+			<span class="button header margin_10_right" ng-click="root.showDownload()">Download</span>
+			<a class="link" ng-href="https://github.com/Wolfram-Creative/fractional" target="_blank">Contribute</a>
 		</div>
 	</div>
 </div>

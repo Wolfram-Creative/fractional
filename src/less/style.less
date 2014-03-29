@@ -114,8 +114,24 @@ button, .button {
   &.green {
     background-color: @green;
   }
+  &.auto-width {
+    width: auto;
+  }
   &[disabled] {
     opacity: .3;
+  }
+  &.header {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: @black;
+    background-color: @green;
+    display: inline-block;
+    width: auto;
+    padding: 0 10px;
+  }
+  &:after {
+    display: none;
   }
 }
 

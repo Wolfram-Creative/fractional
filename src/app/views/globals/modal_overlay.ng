@@ -7,7 +7,7 @@
 	<pre ng-if="root.modal.code_snippets" class="margin_20_bottom">
 		<span ng-repeat="snippet in root.modal.code_snippets">{{snippet}}</span>
 	</pre>
-	<div class="fractional_row margin_50_bottom">
+	<div class="fractional_row margin_50_bottom" ng-if="root.modal.button_a.link">
 		<div class="one_third columns padding_5_right">
 			<a ng-href="{{root.modal.button_a.link}}" target="_blank"><button>{{root.modal.button_a.text}}</button></a>
 		</div>

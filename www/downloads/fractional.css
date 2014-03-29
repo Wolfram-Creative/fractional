@@ -1433,406 +1433,410 @@
   display: inline-block;
 }
 /* line 1125, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+.display_inline_block_important {
+  display: inline-block !important;
+}
+/* line 1129, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_0 {
   padding: 0 !important;
 }
-/* line 1129, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1133, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_2 {
   padding: 2px !important;
 }
-/* line 1132, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1136, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_2_top {
   padding-top: 2px !important;
 }
-/* line 1135, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1139, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_2_right {
   padding-right: 2px !important;
 }
-/* line 1138, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1142, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_2_bottom {
   padding-bottom: 2px !important;
 }
-/* line 1141, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1145, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_2_left {
   padding-left: 2px !important;
 }
-/* line 1144, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1148, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_5 {
   padding: 5px !important;
 }
-/* line 1147, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1151, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_5_top {
   padding-top: 5px !important;
 }
-/* line 1150, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1154, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_5_right {
   padding-right: 5px !important;
 }
-/* line 1153, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1157, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_5_bottom {
   padding-bottom: 5px !important;
 }
-/* line 1156, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1160, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_5_left {
   padding-left: 5px !important;
 }
-/* line 1159, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1163, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_5 {
   margin: 5px !important;
 }
-/* line 1162, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1166, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_5_top {
   margin-top: 5px !important;
 }
-/* line 1165, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1169, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_5_right {
   margin-right: 5px !important;
 }
-/* line 1168, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1172, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_5_bottom {
   margin-bottom: 5px !important;
 }
-/* line 1171, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1175, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_5_left {
   margin-left: 5px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1175, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1179, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_5 {
     padding: 5px !important;
   }
 }
-/* line 1179, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1183, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_10 {
   padding: 10px !important;
 }
-/* line 1182, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1186, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_10_top {
   padding-top: 10px !important;
 }
-/* line 1185, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1189, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_10_right {
   padding-right: 10px !important;
 }
-/* line 1188, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1192, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_10_bottom {
   padding-bottom: 10px !important;
 }
-/* line 1191, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1195, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_10_left {
   padding-left: 10px !important;
 }
-/* line 1194, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1198, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_10 {
   margin: 10px !important;
 }
-/* line 1197, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1201, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_10_top {
   margin-top: 10px !important;
 }
-/* line 1200, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1204, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_10_right {
   margin-right: 10px !important;
 }
-/* line 1203, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1207, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_10_bottom {
   margin-bottom: 10px !important;
 }
-/* line 1206, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1210, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_10_left {
   margin-left: 10px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1210, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1214, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_no_margin {
     margin: 0 !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 1215, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1219, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_10 {
     padding: 10px !important;
   }
 }
-/* line 1219, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1223, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_15 {
   padding: 15px !important;
 }
-/* line 1222, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1226, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_15_top {
   padding-top: 15px !important;
 }
-/* line 1225, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1229, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_15_right {
   padding-right: 15px !important;
 }
-/* line 1228, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1232, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_15_bottom {
   padding-bottom: 15px !important;
 }
-/* line 1231, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1235, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_15_left {
   padding-left: 15px !important;
 }
-/* line 1234, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1238, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_20 {
   padding: 20px !important;
 }
-/* line 1237, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1241, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_20_top {
   padding-top: 20px !important;
 }
-/* line 1240, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1244, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_20_right {
   padding-right: 20px !important;
 }
-/* line 1243, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1247, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_20_bottom {
   padding-bottom: 20px !important;
 }
-/* line 1246, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1250, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_20_left {
   padding-left: 20px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1250, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1254, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_20 {
     padding: 20px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 1255, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1259, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_20_top {
     padding-top: 20px !important;
   }
 }
-/* line 1259, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1263, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_20 {
   margin: 20px !important;
 }
-/* line 1262, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1266, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_20_top {
   margin-top: 20px !important;
 }
-/* line 1265, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1269, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_20_right {
   margin-right: 20px !important;
 }
-/* line 1268, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1272, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_20_bottom {
   margin-bottom: 20px !important;
 }
-/* line 1271, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1275, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_20_left {
   margin-left: 20px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1275, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1279, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_20 {
     padding: 20px !important;
   }
 }
-/* line 1279, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1283, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_25 {
   padding: 25px !important;
 }
-/* line 1282, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1286, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_25_top {
   padding-top: 25px !important;
 }
-/* line 1285, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1289, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_25_right {
   padding-right: 25px !important;
 }
-/* line 1288, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1292, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_25_bottom {
   padding-bottom: 25px !important;
 }
-/* line 1291, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1295, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_25_left {
   padding-left: 25px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1295, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1299, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_25 {
     padding: 25px !important;
   }
 }
-/* line 1301, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1305, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_30 {
   padding: 30px !important;
 }
-/* line 1304, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1308, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_30_top {
   padding-top: 30px !important;
 }
-/* line 1307, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1311, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_30_right {
   padding-right: 30px !important;
 }
-/* line 1310, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1314, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_30_bottom {
   padding-bottom: 30px !important;
 }
-/* line 1313, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1317, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_30_left {
   padding-left: 30px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1317, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1321, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_30 {
     padding: 30px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 1322, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1326, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_30_top {
     padding-top: 30px !important;
   }
 }
-/* line 1326, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1330, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_30 {
   margin: 30px !important;
 }
-/* line 1329, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1333, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_30_top {
   margin-top: 30px !important;
 }
-/* line 1332, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1336, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_30_right {
   margin-right: 30px !important;
 }
-/* line 1335, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1339, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_30_bottom {
   margin-bottom: 30px !important;
 }
-/* line 1338, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1342, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_30_left {
   margin-left: 30px !important;
 }
 @media only screen and (max-width: 767px) {
-  /* line 1342, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+  /* line 1346, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
   .small_padding_30 {
     padding: 30px !important;
   }
 }
-/* line 1347, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1351, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_50 {
   padding: 50px !important;
 }
-/* line 1350, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1354, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_50_top {
   padding-top: 50px !important;
 }
-/* line 1353, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1357, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_50_right {
   padding-right: 50px !important;
 }
-/* line 1356, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1360, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_50_bottom {
   padding-bottom: 50px !important;
 }
-/* line 1359, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1363, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_50_left {
   padding-left: 50px !important;
 }
-/* line 1362, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1366, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_50 {
   margin: 50px !important;
 }
-/* line 1365, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1369, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_50_top {
   margin-top: 50px !important;
 }
-/* line 1368, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1372, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_50_right {
   margin-right: 50px !important;
 }
-/* line 1371, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1375, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_50_bottom {
   margin-bottom: 50px !important;
 }
-/* line 1374, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1378, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .margin_50_left {
   margin-left: 50px !important;
 }
-/* line 1377, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1381, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_55 {
   padding: 55px !important;
 }
-/* line 1380, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1384, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_55_top {
   padding-top: 55px !important;
 }
-/* line 1383, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1387, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_55_right {
   padding-right: 55px !important;
 }
-/* line 1386, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1390, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_55_bottom {
   padding-bottom: 55px !important;
 }
-/* line 1389, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1393, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_55_left {
   padding-left: 55px !important;
 }
-/* line 1393, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1397, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_65 {
   padding: 65px !important;
 }
-/* line 1396, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1400, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_65_top {
   padding-top: 65px !important;
 }
-/* line 1399, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1403, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_65_right {
   padding-right: 65px !important;
 }
-/* line 1402, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1406, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_65_bottom {
   padding-bottom: 65px !important;
 }
-/* line 1405, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1409, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_65_left {
   padding-left: 65px !important;
 }
-/* line 1409, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1413, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_75 {
   padding: 75px !important;
 }
-/* line 1412, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1416, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_75_top {
   padding-top: 75px !important;
 }
-/* line 1415, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1419, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_75_right {
   padding-right: 75px !important;
 }
-/* line 1418, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1422, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_75_bottom {
   padding-bottom: 75px !important;
 }
-/* line 1421, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1425, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_75_left {
   padding-left: 75px !important;
 }
-/* line 1425, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1429, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_100 {
   padding: 100px !important;
 }
-/* line 1428, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1432, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_100_top {
   padding-top: 100px !important;
 }
-/* line 1431, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1435, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_100_right {
   padding-right: 100px !important;
 }
-/* line 1434, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1438, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_100_bottom {
   padding-bottom: 100px !important;
 }
-/* line 1437, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
+/* line 1441, /Users/brianjoshuanoah/Dev/fractional/src/less/plugins/fractional.less */
 .padding_100_left {
   padding-left: 100px !important;
 }
