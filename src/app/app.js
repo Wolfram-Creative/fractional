@@ -49,10 +49,16 @@ app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', functio
 	});
 
 	$rootScope
-		.$on('$locationChangeStart', function(ev, next, current) {
+		.$on('$locationChangeStart', function (ev, next, current) {
 			$anchorScroll();
 			$rootScope.active_page = '';
 			$rootScope.title = 'math + CSS';
+		});
+	$rootScope
+		.$on('$locationChangeSuccess', function (ev, next, current) {
+			if (angular.isDefined(ga)) {
+				ga('send', 'pageview', $location.path());
+			}
 		});
 
 }]);
