@@ -52,10 +52,33 @@ module.exports = function(grunt) {
         }
 
     },
+
+    phantomcss: {
+      desktop: {
+        options: {
+          screenshots: 'test/visual/desktop/',
+          results: 'test/results/visual/desktop',
+          viewportSize: [1024, 768]
+        },
+        src: [
+          'test/visual/**.js'
+        ]
+      },
+      mobile: {
+        options: {
+          screenshots: 'test/visual/mobile/',
+          results: 'results/visual/mobile',
+          viewportSize: [320, 480]
+        },
+        src: [
+          'test/visual/**.js'
+        ]
+      }
+    },
     watch: {
         scripts: {
             files: ['src/**/*.js', '*.js'],
-            tasks: ['concat'],
+            tasks: ['concat', 'nodemon', 'phantomcss'],
             options: {
                 spawn: false,
             },
@@ -75,6 +98,36 @@ module.exports = function(grunt) {
           files: ['src/app/**/*.ng'],
           tasks: ['copy:views']
         }
+
+    },
+
+    nodemon: {
+      dev: {
+        script: 'server.js',
+        options: {
+          args: ['dev'],
+          nodeArgs: ['--debug'],
+          callback: function (nodemon) {
+            nodemon.on('log', function (event) {
+              console.log(event.colour);
+            });
+          },
+          env: {
+            PORT: '8181'
+          },
+          cwd: __dirname,
+          ignore: ['node_modules/**'],
+          ext: 'js,coffee',
+          watch: ['server'],
+          delay: 1,
+          legacyWatch: true
+        }
+      },
+      exec: {
+        options: {
+          exec: 'less'
+        }
+      }
     },
     sprite: {
       icon: {
@@ -154,9 +207,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-banner');
+  grunt.loadNpmTasks('grunt-phantomcss');
+  grunt.loadNpmTasks('grunt-nodemon');
 
 
   // Default task(s).
   grunt.registerTask('default', ['sprite', 'less:dev', 'less:build', 'concat', 'usebanner', 'copy']);
+  grunt.registerTask('server', ['nodemon']);
+  grunt.registerTask('test', ['phantomcss']);
   grunt.registerTask('prod', ['sprite', 'less:dev', 'less:prod', 'less:build', 'concat', 'uglify', 'usebanner', 'copy']);
 };
