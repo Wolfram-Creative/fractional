@@ -1,14 +1,15 @@
 {
   "name": "fractional.css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Brian Noah",
     "email": "brianjoshuanoah@gmail.com"
   },
+  "engine": "node 0.10.26",
   "contributors" : [
     {
       "name" : "Nate Lubeck",
-      "email" "nate@wolframcreative.com"
+      "email": "nate@wolframcreative.com"
     }
   ],
   "repository": {
