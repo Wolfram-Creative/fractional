@@ -1,9 +1,9 @@
 <nav id="navigation">
 	<div class="responsive_container">
 		<ul>
-			<li class="page" ng-class="root.active_page === 'home' ? 'active' : 'inactive'"><a ng-href="/">Home</a></li>
-			<li class="page" ng-class="root.active_page === 'the-grid' ? 'active' : 'inactive'"><a ng-href="/the-grid">The Grid</a></li>
-			<li class="page" ng-class="root.active_page === 'responsive' ? 'active' : 'inactive'"><a ng-href="/responsive">Responsive</a></li>
+			<li class="page" ng-class="root.active_page === 'home' ? 'active' : 'inactive'"><a ng-href="/#!">Home</a></li>
+			<li class="page" ng-class="root.active_page === 'the-grid' ? 'active' : 'inactive'"><a ng-href="/#!/the-grid">The Grid</a></li>
+			<li class="page" ng-class="root.active_page === 'responsive' ? 'active' : 'inactive'"><a ng-href="/#!/responsive">Responsive</a></li>
 		</ul>
 	</div>
 </nav>
