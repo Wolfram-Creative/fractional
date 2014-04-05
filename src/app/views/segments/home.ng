@@ -13,8 +13,10 @@
 <div id="home">
 	<section id="how-it-works">
 		<div class="responsive_container small_padding_5">
-
+			<article>
 			<h1>How It Works</h1>
+			<p>If you've spent any amount of time converting mockups from a designer to html you know that it's difficult getting the "grid" to fit "pixel perfect".</p>
+			</article>
 		</div>
 	</section>
 </div> 
