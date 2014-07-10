@@ -17,7 +17,7 @@
     "url": "https://github.com/Wolfram-Creative/fractional"
   },
   "dependencies": {
-    "express": "*",
+    "express": "3.4.0",
     "ejs": "*",
     "mongojs": "~0.10.0",
     "dotenv": "~0.2.4",
