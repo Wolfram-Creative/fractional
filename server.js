@@ -1,27 +1,28 @@
 _ = require('underscore');
 var dotenv = require('dotenv');
 dotenv.load();
+global.www = __dirname + '/www';
 
 if (typeof process.env.port !== 'undefined') {
     process.env.PORT = process.env.port;
 }
 
-model = require('./models');
+// model = require('./models');
 // databaseUrl = process.env.databaseUrl;
 // mongo_collections = ['users'];
 // mongojs = require('mongojs'); 
 // db = mongojs(databaseUrl, mongo_collections);
 
-var path = require('path');
-var childProcess = require('child_process');
-var phantomjs = require('phantomjs');
-var binPath = phantomjs.path;
+// var path = require('path');
+// var childProcess = require('child_process');
+// var phantomjs = require('phantomjs');
+// var binPath = phantomjs.path;
 
 var cluster = require('cluster'),
     numCPUs = require('os').cpus().length,
+    fs = require('fs'),
     express = require('express'),
     http = require('http'),
-    api_router = require('./api_routes/api_router'),
     app = express(),
     server = http.createServer(app);
 
@@ -61,23 +62,9 @@ app.configure(function(){
 
 //APP ROUTING
 app.get('/', function (req, res) {
-    if (typeof req.query._escaped_fragment_ !== 'undefined') {
-        var childArgs = [
-            path.join(__dirname, 'phantom.js'),
-            req.protocol + '://' + req.headers.host + req.query._escaped_fragment_
-        ];
-        childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
-            res.send(stdout);
-        });
-    } else {
-        res.render('index.html');
-    }
+    var stream = fs.createReadStream(www + '/index.html');
+    stream.pipe(res);
 });
-
-// Handle API routing up to 3 layers
-app.all('/api/:route', api_router.route);
-app.all('/api/:route/:sub_route', api_router.route);
-app.all('/api/:route/:sub_route/:sub_sub_route', api_router.route);
 
 // Handle other routing.
 app.get('/*', function (req, res) {

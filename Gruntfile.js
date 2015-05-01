@@ -53,28 +53,28 @@ module.exports = function(grunt) {
 
     },
 
-    phantomcss: {
-      desktop: {
-        options: {
-          screenshots: 'test/visual/desktop/',
-          results: 'test/results/visual/desktop',
-          viewportSize: [1024, 768]
-        },
-        src: [
-          'test/visual/**.js'
-        ]
-      },
-      mobile: {
-        options: {
-          screenshots: 'test/visual/mobile/',
-          results: 'results/visual/mobile',
-          viewportSize: [320, 480]
-        },
-        src: [
-          'test/visual/**.js'
-        ]
-      }
-    },
+    // phantomcss: {
+    //   desktop: {
+    //     options: {
+    //       screenshots: 'test/visual/desktop/',
+    //       results: 'test/results/visual/desktop',
+    //       viewportSize: [1024, 768]
+    //     },
+    //     src: [
+    //       'test/visual/**.js'
+    //     ]
+    //   },
+    //   mobile: {
+    //     options: {
+    //       screenshots: 'test/visual/mobile/',
+    //       results: 'results/visual/mobile',
+    //       viewportSize: [320, 480]
+    //     },
+    //     src: [
+    //       'test/visual/**.js'
+    //     ]
+    //   }
+    // },
     watch: {
         scripts: {
             files: ['src/**/*.js', '*.js'],
@@ -166,7 +166,7 @@ module.exports = function(grunt) {
               + '<%= pkg.name %> - v-<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>  \n'
               + 'Fractional Grid system \n'
               + 'Created by Brian Noah brianjoshuanoah@gmail.com in partnership with Wolfram Creative  \n'
-              + 'http://fractional.wolframcreative.com/  \n'
+              + 'http://getfractional.com/  \n'
               + 'https://github.com/Wolfram-Creative/fractional  \n'
               + '*/',
             linebreak: true
@@ -207,13 +207,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-banner');
-  grunt.loadNpmTasks('grunt-phantomcss');
+  // grunt.loadNpmTasks('grunt-phantomcss');
   grunt.loadNpmTasks('grunt-nodemon');
 
 
   // Default task(s).
   grunt.registerTask('default', ['sprite', 'less:dev', 'less:build', 'concat', 'usebanner', 'copy']);
   grunt.registerTask('server', ['nodemon']);
-  grunt.registerTask('test', ['phantomcss']);
+  // grunt.registerTask('test', ['phantomcss']);
   grunt.registerTask('prod', ['sprite', 'less:dev', 'less:prod', 'less:build', 'concat', 'uglify', 'usebanner', 'copy']);
 };
