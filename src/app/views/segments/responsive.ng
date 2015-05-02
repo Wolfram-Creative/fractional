@@ -5,31 +5,31 @@
 			<p>When Viewed on a smaller screen(less than 767px), a standard column will break and turn into a whole column. We can use the same fractions as above, but include small_(&lt;767px), medium_(480px - 767px), and medium_large_(768px - 979px)</p>
 
 			<h2 class="text_left" data-show-html="true">Small: &lt;767px</h2>
-			<div class="fractional_row">
-				<div class="one_fourth small_two_thirds columns" data-show-html="true">
+			<div class="fractional_row lh30">
+				<div class="one_fourth small_two_thirds" data-show-html="true">
 					<span><span class="hide_small">.one_fourth</span>.small_two_thirds</span>
 				</div>
-				<div class="three_quarters small_one_third columns" data-show-html="true">
+				<div class="three_quarters small_one_third" data-show-html="true">
 					<span><span class="hide_small">.three_quarters</span>.small_one_third</span>
 				</div>
 			</div>
 
 			<h2 class="text_left" data-show-html="true">Medium: 480px - 767px</h2>
-			<div class="fractional_row">
-				<div class="three_fourths medium_one_half columns" data-show-html="true">
+			<div class="fractional_row lh30">
+				<div class="three_fourths medium_one_half" data-show-html="true">
 					<span><span class="hide_small">.three_fourths</span>.medium_one_half</span>
 				</div>
-				<div class="one_quarter medium_one_half columns" data-show-html="true">
+				<div class="one_quarter medium_one_half" data-show-html="true">
 					<span><span class="hide_small">.one_quarter</span>.medium_one_half</span>
 				</div>
 			</div>
 
 			<h2 class="text_left" data-show-html="true">Medium Large: 768px - 979px</h2>
-			<div class="fractional_row">
-				<div class="two_thirds medium_large_one_third small_two_thirds columns" data-show-html="true">
+			<div class="fractional_row lh30">
+				<div class="two_thirds medium_large_one_third small_two_thirds" data-show-html="true">
 					<span><span class="hide_mobile">.two_thirds</span><span class="hide_small">.medium_large_one_third</span>.small_two_thirds</span>
 				</div>
-				<div class="one_third medium_large_two_thirds small_one_third columns" data-show-html="true">
+				<div class="one_third medium_large_two_thirds small_one_third" data-show-html="true">
 					<span><span class="hide_mobile">.one_third</span><span class="hide_small">.medium_large_two_thirds</span>.small_one_third</span>
 				</div>
 			</div>

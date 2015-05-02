@@ -56,12 +56,11 @@
 }
 #home {
 	#how-it-works {
-		[data-show-html="true"] {
+		[data-show-html] {
 			cursor: pointer;
 		}
 		span {
 			&.frac {
-				cursor: pointer;
 				display: inline-block;
 				font-size: 11px;
 				background: @light_green;
@@ -80,54 +79,34 @@
 				}
 			}
 		}
-		.column, .columns {
-			padding: 0 5px;
-			margin-bottom:5px;
-			&:first-of-type {
-				padding-left: 0;
+		.nest { 
+			border-left: 1px solid;
+			border-right: 1px solid;
+			padding-right: 5px;
+			padding-left: 5px;
+			&:hover {
+				background: @light_green;
 			}
-			&:last-of-type {
-				padding-right: 0;
+			& + .nest {
+				border-left: 0;
 			}
-			&.nest { 
-				border-left: 1px solid;
-				border-right: 1px solid;
-				padding-right: 5px;
-				padding-left: 5px;
-				&:hover {
-					background: @light_green;
-				}
-				& + .nest {
-					border-left: 0;
+		}
+		span {
+			display: block;
+			padding: 10px 5px;
+			background-color: @light_light_gray;
+			word-break:break-all;
+			&:hover {
+				background-color: @light_green;
+				color: @gray;
+				span {
+					background: transparent;
 				}
 			}
 			span {
-				display: block;
-				padding: 10px 5px;
-				background-color: @light_light_gray;
-				word-break:break-all;
-				&:hover {
-					background-color: @light_green;
-					color: @gray;
-					span {
-						background: transparent;
-					}
-				}
-				span {
-					display: inline;
-					background: transparent;
-					padding:0;
-				}
-			}
-			.column, .columns {
-				margin: 0;
-				span {
-					background: @light_gray;
-					&:hover {
-						background-color: @light_green;
-						color: @gray;
-					}
-				}
+				display: inline;
+				background: transparent;
+				padding:0;
 			}
 		}
 	}
