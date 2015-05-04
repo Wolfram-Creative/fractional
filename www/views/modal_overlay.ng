@@ -7,19 +7,19 @@
 	<pre ng-if="root.modal.code_snippets" class="margin_20_bottom">
 		<span ng-repeat="snippet in root.modal.code_snippets">{{snippet}}</span>
 	</pre>
-	<div class="fractional_row margin_50_bottom" ng-if="root.modal.button_a.link">
-		<div class="one_third columns padding_5_right">
+	<div class="whole margin_50_bottom" ng-if="root.modal.button_a.link">
+		<div class="f1/3 columns padding_5_right">
 			<a ng-href="{{root.modal.button_a.link}}" target="_blank"><button>{{root.modal.button_a.text}}</button></a>
 		</div>
-		<div class="one_third columns padding_5_right">
+		<div class="f1/3 columns padding_5_right">
 			<a ng-href="{{root.modal.button_b.link}}" target="_blank"><button>{{root.modal.button_b.text}}</button></a>
 		</div>
-		<div class="one_third columns">
+		<div class="f1/3 columns">
 			<a ng-href="{{root.modal.button_c.link}}" target="_blank"><button>{{root.modal.button_c.text}}</button></a>
 		</div>
 	</div>
-	<div class="fractional_row">
-		<div class="one_quarter columns right">
+	<div class="whole">
+		<div class="f1/4 columns right">
 			<button ng-click="hideModal()">OK</button>
 		</div>
 	</div>

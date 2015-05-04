@@ -34,15 +34,15 @@ app.run(['$rootScope', '$http', '$location', '_$local', '$anchorScroll', functio
 				text: 'Download fractional.css',
 				button_a : {
 					link: '/downloads/fractional.min.css',
-					text: 'fractional.min.css(35kb)'
+					text: 'fractional.min.css(14kb)'
 				},
 				button_b : {
 					link: '/downloads/fractional.css',
-					text: 'fractional.css(49kb)'
+					text: 'fractional.css(18kb)'
 				},
 				button_c : {
 					link: '/downloads/fractional.less',
-					text: 'fractional.less(30kb)'
+					text: 'fractional.less(19kb)'
 				}
 			};
 		}
@@ -159,7 +159,7 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 	angular.extend($scope, {
 		root: $rootScope,
 		hero: {
-			text: 'Common-sense responsive grid system for rapid development',
+			text: 'Common-sense responsive layout system for rapid development',
 			img: '/img/fractional-1400.png'
 		},
 		scrollStartEnd : function (scroll, start_fade, end_fade) {
@@ -252,15 +252,20 @@ app.directive('showHtml', ['$window', function ($window) {
         link: function ($scope, elem, attrs) {
             var attr_class = attrs['class'],
                 element = attrs.$$element.context.localName,
-                html = '<' + element + ' class="' + attr_class + '"></' + element + '>',
-                emmet = element + '.' + attr_class.replace(/ /g, '.'),
+                containerStart = '<div class="whole">',
+                html = '    <' + element + ' class="' + attr_class + '"></' + element + '>',
+                containerEnd = '</div>',
                 $this = angular.element(elem),
-                code_snippets = [ html, ' ', emmet ];
+                code_snippets = [html];
+
+            if (attr_class.indexOf('/') > -1) {
+                code_snippets = [containerStart, html, containerEnd];
+            }
             $this.on('click', function () {
-                $scope.$apply(function () {
+                $scope.$apply( function () {
                     $scope.root.modal = {
                         display: true,
-                        text: 'Copy the HTML or Emmet and paste in your favorite editor:',
+                        text: 'Copy the HTML paste in your favorite editor:',
                         code_snippets : code_snippets
                     };
                 });

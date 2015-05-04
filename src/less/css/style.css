@@ -360,7 +360,7 @@ Created by Brian Noah brianjoshuanoah@gmail.com for J.Hilburn
 Least common denominator is taken into account.
 two_fourths = one_half, so two_fourths doesn't exist.
 */
-.responsive_container {
+.container {
   margin: 0 auto;
   paddomg: 0;
   box-sizing: border-box;
@@ -370,22 +370,22 @@ two_fourths = one_half, so two_fourths doesn't exist.
   position: relative;
 }
 @media only screen and (min-width: 1200px) {
-  .responsive_container {
+  .container {
     width: 1170px;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
-  .responsive_container {
+  .container {
     width: 960px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  .responsive_container {
+  .container {
     width: 724px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .responsive_container {
+  .container {
     width: 100%;
   }
 }
@@ -412,7 +412,7 @@ two_fourths = one_half, so two_fourths doesn't exist.
     display: flex;
   }
 }
-.fractional_row {
+.whole {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -422,745 +422,745 @@ two_fourths = one_half, so two_fourths doesn't exist.
   -ms-box-sizing: border-box;
   position: relative;
 }
-.fractional_row * {
+.whole * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   position: relative;
 }
-.fractional_row .fractional_row {
+.whole .whole {
   width: auto;
 }
-.fractional_row:before {
+.whole:before {
   content: '';
   display: block;
   clear: both;
 }
-.fractional_row:after {
+.whole:after {
   content: '';
   display: block;
   clear: both;
 }
-.fractional_row .display_none {
+.whole .display_none {
   display: none;
 }
-.fractional_row .columns,
-.fractional_row .column {
+.whole .columns,
+.whole .column {
   margin: 0;
   float: left;
   clear: none;
   min-height: 1px;
 }
-.fractional_row .columns.one_half,
-.fractional_row .column.one_half {
+.whole .columns.one_half,
+.whole .column.one_half {
   width: 50%;
 }
-.fractional_row .columns.one_third,
-.fractional_row .column.one_third {
+.whole .columns.one_third,
+.whole .column.one_third {
   width: 33.333333333333336%;
 }
-.fractional_row .columns.two_thirds,
-.fractional_row .column.two_thirds {
+.whole .columns.two_thirds,
+.whole .column.two_thirds {
   width: 66.66666666666667%;
 }
-.fractional_row .columns.one_fourth,
-.fractional_row .column.one_fourth {
+.whole .columns.one_fourth,
+.whole .column.one_fourth {
   width: 25%;
 }
-.fractional_row .columns.one_quarter,
-.fractional_row .column.one_quarter {
+.whole .columns.one_quarter,
+.whole .column.one_quarter {
   width: 25%;
 }
-.fractional_row .columns.three_fourths,
-.fractional_row .column.three_fourths {
+.whole .columns.three_fourths,
+.whole .column.three_fourths {
   width: 75%;
 }
-.fractional_row .columns.three_quarters,
-.fractional_row .column.three_quarters {
+.whole .columns.three_quarters,
+.whole .column.three_quarters {
   width: 75%;
 }
-.fractional_row .columns.one_fifth,
-.fractional_row .column.one_fifth {
+.whole .columns.one_fifth,
+.whole .column.one_fifth {
   width: 20%;
 }
-.fractional_row .columns.two_fifths,
-.fractional_row .column.two_fifths {
+.whole .columns.two_fifths,
+.whole .column.two_fifths {
   width: 40%;
 }
-.fractional_row .columns.three_fifths,
-.fractional_row .column.three_fifths {
+.whole .columns.three_fifths,
+.whole .column.three_fifths {
   width: 60%;
 }
-.fractional_row .columns.four_fifths,
-.fractional_row .column.four_fifths {
+.whole .columns.four_fifths,
+.whole .column.four_fifths {
   width: 80%;
 }
-.fractional_row .columns.one_sixth,
-.fractional_row .column.one_sixth {
+.whole .columns.one_sixth,
+.whole .column.one_sixth {
   width: 16.666666666666668%;
 }
-.fractional_row .columns.five_sixths,
-.fractional_row .column.five_sixths {
+.whole .columns.five_sixths,
+.whole .column.five_sixths {
   width: 83.33333333333333%;
 }
-.fractional_row .columns.one_seventh,
-.fractional_row .column.one_seventh {
+.whole .columns.one_seventh,
+.whole .column.one_seventh {
   width: 14.285714285714286%;
 }
-.fractional_row .columns.two_sevenths,
-.fractional_row .column.two_sevenths {
+.whole .columns.two_sevenths,
+.whole .column.two_sevenths {
   width: 28.571428571428573%;
 }
-.fractional_row .columns.three_sevenths,
-.fractional_row .column.three_sevenths {
+.whole .columns.three_sevenths,
+.whole .column.three_sevenths {
   width: 42.857142857142854%;
 }
-.fractional_row .columns.four_sevenths,
-.fractional_row .column.four_sevenths {
+.whole .columns.four_sevenths,
+.whole .column.four_sevenths {
   width: 57.142857142857146%;
 }
-.fractional_row .columns.five_sevenths,
-.fractional_row .column.five_sevenths {
+.whole .columns.five_sevenths,
+.whole .column.five_sevenths {
   width: 71.42857142857143%;
 }
-.fractional_row .columns.six_sevenths,
-.fractional_row .column.six_sevenths {
+.whole .columns.six_sevenths,
+.whole .column.six_sevenths {
   width: 85.71428571428571%;
 }
-.fractional_row .columns.one_eighth,
-.fractional_row .column.one_eighth {
+.whole .columns.one_eighth,
+.whole .column.one_eighth {
   width: 12.5%;
 }
-.fractional_row .columns.three_eighths,
-.fractional_row .column.three_eighths {
+.whole .columns.three_eighths,
+.whole .column.three_eighths {
   width: 37.5%;
 }
-.fractional_row .columns.five_eighths,
-.fractional_row .column.five_eighths {
+.whole .columns.five_eighths,
+.whole .column.five_eighths {
   width: 62.5%;
 }
-.fractional_row .columns.seven_eighths,
-.fractional_row .column.seven_eighths {
+.whole .columns.seven_eighths,
+.whole .column.seven_eighths {
   width: 87.5%;
 }
-.fractional_row .columns.one_ninth,
-.fractional_row .column.one_ninth {
+.whole .columns.one_ninth,
+.whole .column.one_ninth {
   width: 11.11111111111111%;
 }
-.fractional_row .columns.two_ninths,
-.fractional_row .column.two_ninths {
+.whole .columns.two_ninths,
+.whole .column.two_ninths {
   width: 22.22222222222222%;
 }
-.fractional_row .columns.four_ninths,
-.fractional_row .column.four_ninths {
+.whole .columns.four_ninths,
+.whole .column.four_ninths {
   width: 44.44444444444444%;
 }
-.fractional_row .columns.five_ninths,
-.fractional_row .column.five_ninths {
+.whole .columns.five_ninths,
+.whole .column.five_ninths {
   width: 55.55555555555556%;
 }
-.fractional_row .columns.seven_ninths,
-.fractional_row .column.seven_ninths {
+.whole .columns.seven_ninths,
+.whole .column.seven_ninths {
   width: 77.77777777777777%;
 }
-.fractional_row .columns.eigth_ninths,
-.fractional_row .column.eigth_ninths {
+.whole .columns.eigth_ninths,
+.whole .column.eigth_ninths {
   width: 88.88888888888889%;
 }
-.fractional_row .columns.one_tenth,
-.fractional_row .column.one_tenth {
+.whole .columns.one_tenth,
+.whole .column.one_tenth {
   width: 10%;
 }
-.fractional_row .columns.three_tenths,
-.fractional_row .column.three_tenths {
+.whole .columns.three_tenths,
+.whole .column.three_tenths {
   width: 30%;
 }
-.fractional_row .columns.seven_tenths,
-.fractional_row .column.seven_tenths {
+.whole .columns.seven_tenths,
+.whole .column.seven_tenths {
   width: 70%;
 }
-.fractional_row .columns.nine_tenths,
-.fractional_row .column.nine_tenths {
+.whole .columns.nine_tenths,
+.whole .column.nine_tenths {
   width: 90%;
 }
-.fractional_row .columns.one_twelfth,
-.fractional_row .column.one_twelfth {
+.whole .columns.one_twelfth,
+.whole .column.one_twelfth {
   width: 8.333333333333334%;
 }
-.fractional_row .columns.five_twelfths,
-.fractional_row .column.five_twelfths {
+.whole .columns.five_twelfths,
+.whole .column.five_twelfths {
   width: 41.666666666666664%;
 }
-.fractional_row .columns.seven_twelfths,
-.fractional_row .column.seven_twelfths {
+.whole .columns.seven_twelfths,
+.whole .column.seven_twelfths {
   width: 58.333333333333336%;
 }
-.fractional_row .columns.nine_twelfths,
-.fractional_row .column.nine_twelfths {
+.whole .columns.nine_twelfths,
+.whole .column.nine_twelfths {
   width: 75%;
 }
-.fractional_row .columns.eleven_twelfths,
-.fractional_row .column.eleven_twelfths {
+.whole .columns.eleven_twelfths,
+.whole .column.eleven_twelfths {
   width: 91.66666666666667%;
 }
-.fractional_row .columns.whole,
-.fractional_row .column.whole,
-.fractional_row .columns.one,
-.fractional_row .column.one,
-.fractional_row .columns.full,
-.fractional_row .column.full {
+.whole .columns.whole,
+.whole .column.whole,
+.whole .columns.one,
+.whole .column.one,
+.whole .columns.full,
+.whole .column.full {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_left,
-  .fractional_row .column.small_left {
+  .whole .columns.small_left,
+  .whole .column.small_left {
     float: left !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_right,
-  .fractional_row .column.small_right {
+  .whole .columns.small_right,
+  .whole .column.small_right {
     float: right !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_half,
-  .fractional_row .column.small_one_half {
+  .whole .columns.small_one_half,
+  .whole .column.small_one_half {
     width: 50% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_third,
-  .fractional_row .column.small_one_third {
+  .whole .columns.small_one_third,
+  .whole .column.small_one_third {
     width: 33.333333333333336% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_two_thirds,
-  .fractional_row .column.small_two_thirds {
+  .whole .columns.small_two_thirds,
+  .whole .column.small_two_thirds {
     width: 66.66666666666667% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_fourth,
-  .fractional_row .column.small_one_fourth {
+  .whole .columns.small_one_fourth,
+  .whole .column.small_one_fourth {
     width: 25% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_quarter,
-  .fractional_row .column.small_one_quarter {
+  .whole .columns.small_one_quarter,
+  .whole .column.small_one_quarter {
     width: 25% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_fourths,
-  .fractional_row .column.small_three_fourths {
+  .whole .columns.small_three_fourths,
+  .whole .column.small_three_fourths {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_quarters,
-  .fractional_row .column.small_three_quarters {
+  .whole .columns.small_three_quarters,
+  .whole .column.small_three_quarters {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_fifth,
-  .fractional_row .column.small_one_fifth {
+  .whole .columns.small_one_fifth,
+  .whole .column.small_one_fifth {
     width: 20% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_two_fifths,
-  .fractional_row .column.small_two_fifths {
+  .whole .columns.small_two_fifths,
+  .whole .column.small_two_fifths {
     width: 40% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_fifths,
-  .fractional_row .column.small_three_fifths {
+  .whole .columns.small_three_fifths,
+  .whole .column.small_three_fifths {
     width: 60% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_four_fifths,
-  .fractional_row .column.small_four_fifths {
+  .whole .columns.small_four_fifths,
+  .whole .column.small_four_fifths {
     width: 80% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_sixth,
-  .fractional_row .column.small_one_sixth {
+  .whole .columns.small_one_sixth,
+  .whole .column.small_one_sixth {
     width: 16.666666666666668% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_five_sixths,
-  .fractional_row .column.small_five_sixths {
+  .whole .columns.small_five_sixths,
+  .whole .column.small_five_sixths {
     width: 83.33333333333333% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_seventh,
-  .fractional_row .column.small_one_seventh {
+  .whole .columns.small_one_seventh,
+  .whole .column.small_one_seventh {
     width: 14.285714285714286% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_two_sevenths,
-  .fractional_row .column.small_two_sevenths {
+  .whole .columns.small_two_sevenths,
+  .whole .column.small_two_sevenths {
     width: 28.571428571428573% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_sevenths,
-  .fractional_row .column.small_three_sevenths {
+  .whole .columns.small_three_sevenths,
+  .whole .column.small_three_sevenths {
     width: 42.857142857142854% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_four_sevenths,
-  .fractional_row .column.small_four_sevenths {
+  .whole .columns.small_four_sevenths,
+  .whole .column.small_four_sevenths {
     width: 57.142857142857146% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_five_sevenths,
-  .fractional_row .column.small_five_sevenths {
+  .whole .columns.small_five_sevenths,
+  .whole .column.small_five_sevenths {
     width: 71.42857142857143% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_six_sevenths,
-  .fractional_row .column.small_six_sevenths {
+  .whole .columns.small_six_sevenths,
+  .whole .column.small_six_sevenths {
     width: 85.71428571428571% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_eighth,
-  .fractional_row .column.small_one_eighth {
+  .whole .columns.small_one_eighth,
+  .whole .column.small_one_eighth {
     width: 12.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_eighths,
-  .fractional_row .column.small_three_eighths {
+  .whole .columns.small_three_eighths,
+  .whole .column.small_three_eighths {
     width: 37.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_five_eighths,
-  .fractional_row .column.small_five_eighths {
+  .whole .columns.small_five_eighths,
+  .whole .column.small_five_eighths {
     width: 62.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_seven_eighths,
-  .fractional_row .column.small_seven_eighths {
+  .whole .columns.small_seven_eighths,
+  .whole .column.small_seven_eighths {
     width: 87.5% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_ninth,
-  .fractional_row .column.small_one_ninth {
+  .whole .columns.small_one_ninth,
+  .whole .column.small_one_ninth {
     width: 11.11111111111111% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_two_ninths,
-  .fractional_row .column.small_two_ninths {
+  .whole .columns.small_two_ninths,
+  .whole .column.small_two_ninths {
     width: 22.22222222222222% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_four_ninths,
-  .fractional_row .column.small_four_ninths {
+  .whole .columns.small_four_ninths,
+  .whole .column.small_four_ninths {
     width: 44.44444444444444% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_five_ninths,
-  .fractional_row .column.small_five_ninths {
+  .whole .columns.small_five_ninths,
+  .whole .column.small_five_ninths {
     width: 55.55555555555556% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_seven_ninths,
-  .fractional_row .column.small_seven_ninths {
+  .whole .columns.small_seven_ninths,
+  .whole .column.small_seven_ninths {
     width: 77.77777777777777% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_eigth_ninths,
-  .fractional_row .column.small_eigth_ninths {
+  .whole .columns.small_eigth_ninths,
+  .whole .column.small_eigth_ninths {
     width: 88.88888888888889% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_tenth,
-  .fractional_row .column.small_one_tenth {
+  .whole .columns.small_one_tenth,
+  .whole .column.small_one_tenth {
     width: 10% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_three_tenths,
-  .fractional_row .column.small_three_tenths {
+  .whole .columns.small_three_tenths,
+  .whole .column.small_three_tenths {
     width: 30% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_seven_tenths,
-  .fractional_row .column.small_seven_tenths {
+  .whole .columns.small_seven_tenths,
+  .whole .column.small_seven_tenths {
     width: 70% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_nine_tenths,
-  .fractional_row .column.small_nine_tenths {
+  .whole .columns.small_nine_tenths,
+  .whole .column.small_nine_tenths {
     width: 90% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_one_twelfth,
-  .fractional_row .column.small_one_twelfth {
+  .whole .columns.small_one_twelfth,
+  .whole .column.small_one_twelfth {
     width: 8.333333333333334% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_five_twelfths,
-  .fractional_row .column.small_five_twelfths {
+  .whole .columns.small_five_twelfths,
+  .whole .column.small_five_twelfths {
     width: 41.666666666666664% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_seven_twelfths,
-  .fractional_row .column.small_seven_twelfths {
+  .whole .columns.small_seven_twelfths,
+  .whole .column.small_seven_twelfths {
     width: 58.333333333333336% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_nine_twelfths,
-  .fractional_row .column.small_nine_twelfths {
+  .whole .columns.small_nine_twelfths,
+  .whole .column.small_nine_twelfths {
     width: 75% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_eleven_twelfths,
-  .fractional_row .column.small_eleven_twelfths {
+  .whole .columns.small_eleven_twelfths,
+  .whole .column.small_eleven_twelfths {
     width: 91.66666666666667% !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns.small_whole,
-  .fractional_row .column.small_whole,
-  .fractional_row .columns.small_one,
-  .fractional_row .column.small_one,
-  .fractional_row .columns.small_full,
-  .fractional_row .column.small_full {
+  .whole .columns.small_whole,
+  .whole .column.small_whole,
+  .whole .columns.small_one,
+  .whole .column.small_one,
+  .whole .columns.small_full,
+  .whole .column.small_full {
     width: 100% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns .medium_text_right,
-  .fractional_row .column .medium_text_right {
+  .whole .columns .medium_text_right,
+  .whole .column .medium_text_right {
     text-align: right !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns .medium_text_left,
-  .fractional_row .column .medium_text_left {
+  .whole .columns .medium_text_left,
+  .whole .column .medium_text_left {
     text-align: left !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_left,
-  .fractional_row .column.medium_left {
+  .whole .columns.medium_left,
+  .whole .column.medium_left {
     float: left !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_right,
-  .fractional_row .column.medium_right {
+  .whole .columns.medium_right,
+  .whole .column.medium_right {
     float: right !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_half,
-  .fractional_row .column.medium_one_half {
+  .whole .columns.medium_one_half,
+  .whole .column.medium_one_half {
     width: 50% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_third,
-  .fractional_row .column.medium_one_third {
+  .whole .columns.medium_one_third,
+  .whole .column.medium_one_third {
     width: 33.333333333333336% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_two_thirds,
-  .fractional_row .column.medium_two_thirds {
+  .whole .columns.medium_two_thirds,
+  .whole .column.medium_two_thirds {
     width: 66.66666666666667% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_fourth,
-  .fractional_row .column.medium_one_fourth {
+  .whole .columns.medium_one_fourth,
+  .whole .column.medium_one_fourth {
     width: 25% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_quarter,
-  .fractional_row .column.medium_one_quarter {
+  .whole .columns.medium_one_quarter,
+  .whole .column.medium_one_quarter {
     width: 25% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_fourths,
-  .fractional_row .column.medium_three_fourths {
+  .whole .columns.medium_three_fourths,
+  .whole .column.medium_three_fourths {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_quarters,
-  .fractional_row .column.medium_three_quarters {
+  .whole .columns.medium_three_quarters,
+  .whole .column.medium_three_quarters {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_fifth,
-  .fractional_row .column.medium_one_fifth {
+  .whole .columns.medium_one_fifth,
+  .whole .column.medium_one_fifth {
     width: 20% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_two_fifths,
-  .fractional_row .column.medium_two_fifths {
+  .whole .columns.medium_two_fifths,
+  .whole .column.medium_two_fifths {
     width: 40% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_fifths,
-  .fractional_row .column.medium_three_fifths {
+  .whole .columns.medium_three_fifths,
+  .whole .column.medium_three_fifths {
     width: 60% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_four_fifths,
-  .fractional_row .column.medium_four_fifths {
+  .whole .columns.medium_four_fifths,
+  .whole .column.medium_four_fifths {
     width: 80% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_sixth,
-  .fractional_row .column.medium_one_sixth {
+  .whole .columns.medium_one_sixth,
+  .whole .column.medium_one_sixth {
     width: 16.666666666666668% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_five_sixths,
-  .fractional_row .column.medium_five_sixths {
+  .whole .columns.medium_five_sixths,
+  .whole .column.medium_five_sixths {
     width: 83.33333333333333% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_seventh,
-  .fractional_row .column.medium_one_seventh {
+  .whole .columns.medium_one_seventh,
+  .whole .column.medium_one_seventh {
     width: 14.285714285714286% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_two_sevenths,
-  .fractional_row .column.medium_two_sevenths {
+  .whole .columns.medium_two_sevenths,
+  .whole .column.medium_two_sevenths {
     width: 28.571428571428573% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_sevenths,
-  .fractional_row .column.medium_three_sevenths {
+  .whole .columns.medium_three_sevenths,
+  .whole .column.medium_three_sevenths {
     width: 42.857142857142854% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_four_sevenths,
-  .fractional_row .column.medium_four_sevenths {
+  .whole .columns.medium_four_sevenths,
+  .whole .column.medium_four_sevenths {
     width: 57.142857142857146% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_five_sevenths,
-  .fractional_row .column.medium_five_sevenths {
+  .whole .columns.medium_five_sevenths,
+  .whole .column.medium_five_sevenths {
     width: 71.42857142857143% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_six_sevenths,
-  .fractional_row .column.medium_six_sevenths {
+  .whole .columns.medium_six_sevenths,
+  .whole .column.medium_six_sevenths {
     width: 85.71428571428571% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_eighth,
-  .fractional_row .column.medium_one_eighth {
+  .whole .columns.medium_one_eighth,
+  .whole .column.medium_one_eighth {
     width: 12.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_eighths,
-  .fractional_row .column.medium_three_eighths {
+  .whole .columns.medium_three_eighths,
+  .whole .column.medium_three_eighths {
     width: 37.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_five_eighths,
-  .fractional_row .column.medium_five_eighths {
+  .whole .columns.medium_five_eighths,
+  .whole .column.medium_five_eighths {
     width: 62.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_seven_eighths,
-  .fractional_row .column.medium_seven_eighths {
+  .whole .columns.medium_seven_eighths,
+  .whole .column.medium_seven_eighths {
     width: 87.5% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_ninth,
-  .fractional_row .column.medium_one_ninth {
+  .whole .columns.medium_one_ninth,
+  .whole .column.medium_one_ninth {
     width: 11.11111111111111% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_two_ninths,
-  .fractional_row .column.medium_two_ninths {
+  .whole .columns.medium_two_ninths,
+  .whole .column.medium_two_ninths {
     width: 22.22222222222222% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_four_ninths,
-  .fractional_row .column.medium_four_ninths {
+  .whole .columns.medium_four_ninths,
+  .whole .column.medium_four_ninths {
     width: 44.44444444444444% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_five_ninths,
-  .fractional_row .column.medium_five_ninths {
+  .whole .columns.medium_five_ninths,
+  .whole .column.medium_five_ninths {
     width: 55.55555555555556% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_seven_ninths,
-  .fractional_row .column.medium_seven_ninths {
+  .whole .columns.medium_seven_ninths,
+  .whole .column.medium_seven_ninths {
     width: 77.77777777777777% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_eigth_ninths,
-  .fractional_row .column.medium_eigth_ninths {
+  .whole .columns.medium_eigth_ninths,
+  .whole .column.medium_eigth_ninths {
     width: 88.88888888888889% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_tenth,
-  .fractional_row .column.medium_one_tenth {
+  .whole .columns.medium_one_tenth,
+  .whole .column.medium_one_tenth {
     width: 10% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_three_tenths,
-  .fractional_row .column.medium_three_tenths {
+  .whole .columns.medium_three_tenths,
+  .whole .column.medium_three_tenths {
     width: 30% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_seven_tenths,
-  .fractional_row .column.medium_seven_tenths {
+  .whole .columns.medium_seven_tenths,
+  .whole .column.medium_seven_tenths {
     width: 70% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_nine_tenths,
-  .fractional_row .column.medium_nine_tenths {
+  .whole .columns.medium_nine_tenths,
+  .whole .column.medium_nine_tenths {
     width: 90% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_one_twelfth,
-  .fractional_row .column.medium_one_twelfth {
+  .whole .columns.medium_one_twelfth,
+  .whole .column.medium_one_twelfth {
     width: 8.333333333333334% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_five_twelfths,
-  .fractional_row .column.medium_five_twelfths {
+  .whole .columns.medium_five_twelfths,
+  .whole .column.medium_five_twelfths {
     width: 41.666666666666664% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_seven_twelfths,
-  .fractional_row .column.medium_seven_twelfths {
+  .whole .columns.medium_seven_twelfths,
+  .whole .column.medium_seven_twelfths {
     width: 58.333333333333336% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_nine_twelfths,
-  .fractional_row .column.medium_nine_twelfths {
+  .whole .columns.medium_nine_twelfths,
+  .whole .column.medium_nine_twelfths {
     width: 75% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_eleven_twelfths,
-  .fractional_row .column.medium_eleven_twelfths {
+  .whole .columns.medium_eleven_twelfths,
+  .whole .column.medium_eleven_twelfths {
     width: 91.66666666666667% !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .fractional_row .columns.medium_whole,
-  .fractional_row .column.medium_whole,
-  .fractional_row .columns.medium_one,
-  .fractional_row .column.medium_one,
-  .fractional_row .columns.medium_full,
-  .fractional_row .column.medium_full {
+  .whole .columns.medium_whole,
+  .whole .column.medium_whole,
+  .whole .columns.medium_one,
+  .whole .column.medium_one,
+  .whole .columns.medium_full,
+  .whole .column.medium_full {
     width: 100% !important;
   }
 }
-.fractional_row .columns:last-of-type,
-.fractional_row .column:last-of-type {
+.whole .columns:last-of-type,
+.whole .column:last-of-type {
   float: right;
 }
-.fractional_row .columns:first-of-type,
-.fractional_row .column:first-of-type {
+.whole .columns:first-of-type,
+.whole .column:first-of-type {
   float: left;
 }
-.fractional_row .columns.centered,
-.fractional_row .column.centered {
+.whole .columns.centered,
+.whole .column.centered {
   margin-left: auto;
   margin-right: auto;
 }
-.fractional_row .columns.right,
-.fractional_row .column.right {
+.whole .columns.right,
+.whole .column.right {
   float: right !important;
 }
-.fractional_row .columns.left,
-.fractional_row .column.left {
+.whole .columns.left,
+.whole .column.left {
   float: left !important;
 }
 @media only screen and (max-width: 767px) {
-  .fractional_row .columns,
-  .fractional_row .column {
+  .whole .columns,
+  .whole .column {
     width: 100% !important;
   }
 }
 @media only screen and (min-width: 767px) {
-  .fractional_row.large_break .columns,
-  .fractional_row.large_break .column {
+  .whole.large_break .columns,
+  .whole.large_break .column {
     float: none;
     width: auto;
   }
-  .fractional_row.large_break:before {
+  .whole.large_break:before {
     display: none;
   }
-  .fractional_row.large_break:after {
+  .whole.large_break:after {
     display: none;
   }
 }

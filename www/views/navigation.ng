@@ -1,5 +1,5 @@
 <nav id="navigation">
-	<div class="responsive_container">
+	<div class="container">
 		<ul>
 			<li class="page" ng-class="root.active_page === 'home' ? 'active' : 'inactive'"><a ng-href="/#!">Home</a></li>
 			<li class="page" ng-class="root.active_page === 'the-grid' ? 'active' : 'inactive'"><a ng-href="/#!/the-grid">The Grid</a></li>

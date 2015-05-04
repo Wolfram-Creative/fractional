@@ -1,6 +1,6 @@
 <div id="home">
 	<section id="how-it-works">
-		<div class="responsive_container">
+		<div class="container">
 
 			<h1>The Grid</h1>
 			<p>Let's start with general desktop views. This includes nesting columns inside of columns.</p>
@@ -8,709 +8,702 @@
 			<p>There are a few things that are very important to note here:</p>
 
 			<ul>
-				<li>All elements inside of .fractional_row are relative. This is important in order to have everthing flow responsively.</li>
+				<li>All elements inside of .whole are relative. This is important in order to have everthing flow responsively.</li>
 				<li>There is no padding, and no margin. If you want margins, add them. If you want padding, add it.</li>
-				<li>If you want to have a full width row, do NOT add any lateral marging.</li>
-				<li>It will break the system. If you want space between your columns, add padding and add a div inside with your content.</li>
+				<li>If you want to have a full width row, do NOT add any lateral margins. It will break the system. If you want space between your columns, add padding and add a div inside with your content.</li>
 			</ul>
-			<p>What's amazing about this is that you aren't stuck with the same denominator. If you want to have 1/2 + 1/4 + 1/4, you can. If you want to then have 1/3 + 1/3 + 1/3 inside of the 1/2, go ahead. Try 1/5 + 1/10 + 7/10... It works.</p>
 
 <!-- WHOLE --> 
 			<h2 class="text_left" data-show-html>Whole</h2>
 			<p>A single column. Not much to look at here...</p>
 			<p><span class="frac">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one" data-show-html>
-					<span>.one</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="whole" data-show-html>
-					<span>.whole</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1" data-show-html>
+					<span>.f1</span>
 				</div>
 			</div>
 <!-- HALF -->
 			<h2 class="text_left" data-show-html>Half</h2>
 			<p><span class="frac">1/2</span><span class="frac lcd">1</span</p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half"></div>
-				<div class="one_half columns text_center margin_5_top hide_small">
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2"></div>
+				<div class="f1/2 columns text_center margin_5_top hide_small">
 					Two columns nested inside of 1/2 columns
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
-				<div class="one_half nest">
-					<div class="one_half" data-show-html>
-						<span>.one_half</span>
+				<div class="f1/2 nest">
+					<div class="f1/2" data-show-html>
+						<span>.f1/2</span>
 					</div>
-					<div class="one_half" data-show-html>
-						<span>.one_half</span>
+					<div class="f1/2" data-show-html>
+						<span>.f1/2</span>
 					</div>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
-				<div class="one_half nest">
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+				<div class="f1/2 nest">
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
 				</div>
 			</div>
 <!-- THIRDS -->
 			<h2 class="text_left" data-show-html>Thirds</h2>
 			<p><span class="frac">1/3</span><span class="frac">2/3</span><span class="frac lcd">1</span</p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
-				</div>
-				<div class="two_thirds" data-show-html>
-					<span>.two_thirds</span>
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="two_thirds nest">
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+				<div class="f2/3" data-show-html>
+					<span>.f2/3</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
+				</div>
+				<div class="f2/3 nest">
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
-					<div class="one_third" data-show-html>
-						<span>.one_third</span>
+					<div class="f1/3" data-show-html>
+						<span>.f1/3</span>
 					</div>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="two_thirds nest">
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+				<div class="f2/3 nest">
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
 				</div>
 			</div>
 <!-- FOURTHS -->
 			<h2 class="text_left" data-show-html>Fourths/Quarters</h2>
 			<p><span class="frac">1/4</span><span class="frac lcd">1/2</span><span class="frac">3/4</span><span class="frac lcd">1</span</p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_fourth" data-show-html>
-					<span>.one_fourth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
-				<div class="one_fourth" data-show-html>
-					<span>.one_fourth</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
-				<div class="one_fourth" data-show-html>
-					<span>.one_fourth</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_fourths" data-show-html>
-					<span>.three_fourths</span>
-				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_quarters nest">
-					<div class="one_fourth" data-show-html>
-						<span>.one_fourth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/4" data-show-html>
+					<span>.f3/4</span>
+				</div>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/4 nest">
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_fourth" data-show-html>
-						<span>.one_fourth</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_fourth" data-show-html>
-						<span>.one_fourth</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
 				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
 			</div>
 <!-- Fifths -->
 			<h2 class="text_left" data-show-html>Fifths</h2>
 			<p><span class="frac">1/5</span><span class="frac">2/5</span><span class="frac">3/5</span><span class="frac">4/5</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
 				</div>
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
 				</div>
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
 				</div>
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
 				</div>
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="two_fifths" data-show-html>
-					<span>.two_fifths</span>
-				</div>
-				<div class="one_fifth" data-show-html>
-					<span>.one_fifth</span>
-				</div>
-				<div class="two_fifths" data-show-html>
-					<span>.two_fifths</span>
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_fifths" data-show-html>
-					<span>.three_fifths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f2/5" data-show-html>
+					<span>.f2/5</span>
 				</div>
-				<div class="two_fifths nest">
-					<div class="two_fifths" data-show-html>
-						<span>.two_fifths</span>
-					</div>
-					<div class="three_fifths" data-show-html>
-						<span>.three_fifths</span>
-					</div>
+				<div class="f1/5" data-show-html>
+					<span>.f1/5</span>
+				</div>
+				<div class="f2/5" data-show-html>
+					<span>.f2/5</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="four_fifths" data-show-html>
-					<span>.four_fifths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/5" data-show-html>
+					<span>.f3/5</span>
 				</div>
-				<div class="one_fifth nest">
-					<div class="one_half" data-show-html>
-						<span>.one_half</span>
+				<div class="f2/5 nest">
+					<div class="f2/5" data-show-html>
+						<span>.f2/5</span>
 					</div>
-					<div class="one_half" data-show-html>
-						<span>.one_half</span>
+					<div class="f3/5" data-show-html>
+						<span>.f3/5</span>
 					</div>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_fifths nest">
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f4/5" data-show-html>
+					<span>.f4/5</span>
+				</div>
+				<div class="f1/5 nest">
+					<div class="f1/2" data-show-html>
+						<span>.f1/2</span>
 					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
-					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
-					</div>
-					<div class="one_quarter" data-show-html>
-						<span>.one_quarter</span>
+					<div class="f1/2" data-show-html>
+						<span>.f1/2</span>
 					</div>
 				</div>
-				<div class="two_fifths nest">
-					<div class="two_fifths" data-show-html>
-						<span>.two_fifths</span>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/5 nest">
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
 					</div>
-					<div class="three_fifths" data-show-html>
-						<span>.three_fifths</span>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
+					</div>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
+					</div>
+					<div class="f1/4" data-show-html>
+						<span>.f1/4</span>
+					</div>
+				</div>
+				<div class="f2/5 nest">
+					<div class="f2/5" data-show-html>
+						<span>.f2/5</span>
+					</div>
+					<div class="f3/5" data-show-html>
+						<span>.f3/5</span>
 					</div>
 				</div>
 			</div>
 <!-- SIXTHS -->
 			<h2 class="text_left" data-show-html>Sixths</h2>
 			<p><span class="frac">1/6</span><span class="frac lcd">1/3</span><span class="frac lcd">1/2</span><span class="frac lcd">2/3</span><span class="frac">5/6</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
-				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
-				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
-				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
-				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
 				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_sixths" data-show-html>
-					<span>.five_sixths</span>
-				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_sixths" data-show-html>
-					<span>.five_sixths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
+				</div>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/6" data-show-html>
+					<span>.f5/6</span>
+				</div>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/6" data-show-html>
+					<span>.f5/6</span>
+				</div>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
+				</div>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
 			</div>
 <!-- SEVENTHS -->
 			<h2 class="text_left" data-show-html>Sevenths</h2>
 			<p><span class="frac">1/7</span><span class="frac">2/7</span><span class="frac">3/7</span><span class="frac">4/7</span><span class="frac">5/7</span><span class="frac">6/7</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="two_sevenths" data-show-html>
-					<span>.two_sevenths</span>
-				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
-				</div>
-				<div class="three_sevenths" data-show-html>
-					<span>.three_sevenths</span>
-				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_sevenths" data-show-html>
-					<span>.three_sevenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f2/7" data-show-html>
+					<span>.f2/7</span>
 				</div>
-				<div class="two_sevenths" data-show-html>
-					<span>.two_sevenths</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
-				<div class="two_sevenths" data-show-html>
-					<span>.two_sevenths</span>
+				<div class="f3/7" data-show-html>
+					<span>.f3/7</span>
 				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="four_sevenths" data-show-html>
-					<span>.four_sevenths</span>
-				</div>
-				<div class="three_sevenths" data-show-html>
-					<span>.three_sevenths</span>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_sevenths" data-show-html>
-					<span>.five_sevenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/7" data-show-html>
+					<span>.f3/7</span>
 				</div>
-				<div class="two_sevenths" data-show-html>
-					<span>.two_sevenths</span>
+				<div class="f2/7" data-show-html>
+					<span>.f2/7</span>
+				</div>
+				<div class="f2/7" data-show-html>
+					<span>.f2/7</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="six_sevenths" data-show-html>
-					<span>.six_sevenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f4/7" data-show-html>
+					<span>.f4/7</span>
 				</div>
-				<div class="one_seventh" data-show-html>
-					<span>.one_seventh</span>
+				<div class="f3/7" data-show-html>
+					<span>.f3/7</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/7" data-show-html>
+					<span>.f5/7</span>
+				</div>
+				<div class="f2/7" data-show-html>
+					<span>.f2/7</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f6/7" data-show-html>
+					<span>.f6/7</span>
+				</div>
+				<div class="f1/7" data-show-html>
+					<span>.f1/7</span>
 				</div>
 			</div>
 <!-- EIGHTHS -->
 			<h2 class="text_left" data-show-html>Eighths</h2>
 			<p><span class="frac">1/8</span><span class="frac lcd">1/4</span><span class="frac">3/8</span><span class="frac lcd">1/2</span><span class="frac">5/8</span><span class="frac lcd">3/4</span><span class="frac">7/8</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_eighths" data-show-html>
-					<span>.three_eighths</span>
-				</div>
-				<div class="five_eighths" data-show-html>
-					<span>.five_eighths</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_half" data-show-html>
-					<span>.one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/8" data-show-html>
+					<span>.f3/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
-				</div>
-				<div class="three_eighths" data-show-html>
-					<span>.three_eighths</span>
+				<div class="f5/8" data-show-html>
+					<span>.f5/8</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_eighths" data-show-html>
-					<span>.five_eighths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/2" data-show-html>
+					<span>.f1/2</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
+				<div class="f3/8" data-show-html>
+					<span>.f3/8</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="seven_eighths" data-show-html>
-					<span>.seven_eighths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/8" data-show-html>
+					<span>.f5/8</span>
 				</div>
-				<div class="one_eighth" data-show-html>
-					<span>.one_eighth</span>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
+				</div>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f7/8" data-show-html>
+					<span>.f7/8</span>
+				</div>
+				<div class="f1/8" data-show-html>
+					<span>.f1/8</span>
 				</div>
 			</div>
 <!-- NINTHS -->
 			<h2 class="text_left" data-show-html>Ninths</h2>
 			<p><span class="frac">1/9</span><span class="frac">2/9</span><span class="frac lcd">1/3</span><span class="frac">4/9</span><span class="frac">5/9</span><span class="frac lcd">2/3</span><span class="frac">7/9</span><span class="frac">8/9</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="two_ninths" data-show-html>
-					<span>.two_ninths</span>
-				</div>
-				<div class="seven_ninths" data-show-html>
-					<span>.seven_ninths</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_third" data-show-html>
-					<span>.one_third</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f2/9" data-show-html>
+					<span>.f2/9</span>
 				</div>
-				<div class="five_ninths" data-show-html>
-					<span>.five_ninths</span>
-				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f7/9" data-show-html>
+					<span>.f7/9</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="four_ninths small_one_half" data-show-html>
-					<span><span class="hide_small">.four_ninths</span>.small_one_half</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/3" data-show-html>
+					<span>.f1/3</span>
 				</div>
-				<div class="five_ninths small_one_half nest">
-					<div class="one_third small_one_third" data-show-html>
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+				<div class="f5/9" data-show-html>
+					<span>.f5/9</span>
+				</div>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f4/9 f1/2s" data-show-html>
+					<span><span class="hide_small">.f4/9</span>.f1/2s</span>
+				</div>
+				<div class="f5/9 f1/2s nest">
+					<div class="f1/3 f1/3s" data-show-html>
+						<span><span class="hide_mobile">.f1/3</span>.f1/3s</span>
 					</div>
-					<div class="one_third small_one_third" data-show-html>
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+					<div class="f1/3 f1/3s" data-show-html>
+						<span><span class="hide_mobile">.f1/3</span>.f1/3s</span>
 					</div>
-					<div class="one_third small_one_third" data-show-html>
-						<span><span class="hide_mobile">.one_third</span>.small_one_third</span>
+					<div class="f1/3 f1/3s" data-show-html>
+						<span><span class="hide_mobile">.f1/3</span>.f1/3s</span>
 					</div>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_ninths" data-show-html>
-					<span>.five_ninths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/9" data-show-html>
+					<span>.f5/9</span>
 				</div>
-				<div class="four_ninths" data-show-html>
-					<span>.four_ninths</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="two_thirds" data-show-html>
-					<span>.two_thirds</span>
-				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
-				</div>
-				<div class="two_ninths" data-show-html>
-					<span>.two_ninths</span>
+				<div class="f4/9" data-show-html>
+					<span>.f4/9</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="seven_ninths" data-show-html>
-					<span>.seven_ninths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f2/3" data-show-html>
+					<span>.f2/3</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f2/9" data-show-html>
+					<span>.f2/9</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="eight_ninths" data-show-html>
-					<span>.eight_ninths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f7/9" data-show-html>
+					<span>.f7/9</span>
 				</div>
-				<div class="one_ninth" data-show-html>
-					<span>.one_ninth</span>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
+				</div>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f8/9" data-show-html>
+					<span>.f8/9</span>
+				</div>
+				<div class="f1/9" data-show-html>
+					<span>.f1/9</span>
 				</div>
 			</div>
 
 <!-- TENTHS -->
 			<h2 class="text_left" data-show-html>Tenths</h2>
 			<p><span class="frac">1/10</span><span class="frac lcd">1/5</span><span class="frac">3/10</span><span class="frac lcd">2/5</span><span class="frac lcd">1/2</span><span class="frac lcd">3/5</span><span class="frac">7/10</span><span class="frac lcd">4/5</span><span class="frac">9/10</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="three_tenths" data-show-html>
-					<span>.three_tenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f3/10" data-show-html>
+					<span>.f3/10</span>
 				</div>
-				<div class="two_fifths nest">
-					<div class="three_tenths" data-show-html>
-						<span>.three_tenths</span>
+				<div class="f2/5 nest">
+					<div class="f3/10" data-show-html>
+						<span>.f3/10</span>
 					</div>
-					<div class="seven_tenths" data-show-html>
-						<span>.seven_tenths</span>
+					<div class="f7/10" data-show-html>
+						<span>.f7/10</span>
 					</div>
 				</div>
-				<div class="three_tenths" data-show-html>
-					<span>.three_tenths</span>
+				<div class="f3/10" data-show-html>
+					<span>.f3/10</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="seven_tenths" data-show-html>
-					<span>.seven_tenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f7/10" data-show-html>
+					<span>.f7/10</span>
 				</div>
-				<div class="three_tenths" data-show-html>
-					<span>.three_tenths</span>
+				<div class="f3/10" data-show-html>
+					<span>.f3/10</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="nine_tenths" data-show-html>
-					<span>.nine_tenths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f9/10" data-show-html>
+					<span>.f9/10</span>
 				</div>
-				<div class="one_tenth" data-show-html>
-					<span>.one_tenth</span>
+				<div class="f1/10" data-show-html>
+					<span>.f1/10</span>
 				</div>
 			</div>
 <!-- Twelfths -->
 			<h2 class="text_left" data-show-html>Twelfths</h2>
 			<p><span class="frac">1/12</span><span class="frac lcd">1/6</span><span class="frac lcd">1/4</span><span class="frac lcd">1/3</span><span class="frac">5/12</span><span class="frac lcd">1/2</span><span class="frac">7/12</span><span class="frac lcd">2/3</span><span class="frac lcd">3/4</span><span class="frac lcd">5/6</span><span class="frac">11/12</span><span class="frac lcd">1</span></p>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
-				</div>
-			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="five_twelfths" data-show-html>
-					<span>.five_twelfths</span>
-				</div>
-				<div class="seven_twelfths" data-show-html>
-					<span>.seven_twelfths</span>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="seven_twelfths" data-show-html>
-					<span>.seven_twelfths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f5/12" data-show-html>
+					<span>.f5/12</span>
 				</div>
-				<div class="one_quarter" data-show-html>
-					<span>.one_quarter</span>
-				</div>
-				<div class="one_sixth" data-show-html>
-					<span>.one_sixth</span>
+				<div class="f7/12" data-show-html>
+					<span>.f7/12</span>
 				</div>
 			</div>
-			<div class="fractional_row padding_10_bottom lh30">
-				<div class="eleven_twelfths" data-show-html>
-					<span>.eleven_twelfths</span>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f7/12" data-show-html>
+					<span>.f7/12</span>
 				</div>
-				<div class="one_twelfth" data-show-html>
-					<span>.one_twelfth</span>
+				<div class="f1/4" data-show-html>
+					<span>.f1/4</span>
+				</div>
+				<div class="f1/6" data-show-html>
+					<span>.f1/6</span>
+				</div>
+			</div>
+			<div class="whole padding_10_bottom lh30">
+				<div class="f11/12" data-show-html>
+					<span>.f11/12</span>
+				</div>
+				<div class="f1/12" data-show-html>
+					<span>.f1/12</span>
 				</div>
 			</div>
 

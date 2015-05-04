@@ -11,7 +11,7 @@ app.controller("HomeController", ['$scope', '$rootScope', '$location', function(
 	angular.extend($scope, {
 		root: $rootScope,
 		hero: {
-			text: 'Common-sense responsive grid system for rapid development',
+			text: 'Common-sense responsive layout system for rapid development',
 			img: '/img/fractional-1400.png'
 		},
 		scrollStartEnd : function (scroll, start_fade, end_fade) {
