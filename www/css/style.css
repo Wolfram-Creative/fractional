@@ -491,11 +491,11 @@ table {
 }
 /* line 105, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 3 {
-  width: 33.33%;
+  width: 33.333%;
 }
 /* line 109, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f2\2F 3 {
-  width: 66.67%;
+  width: 66.667%;
 }
 /* line 115, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 4 {
@@ -523,35 +523,35 @@ table {
 }
 /* line 141, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 6 {
-  width: 16.67%;
+  width: 16.667%;
 }
 /* line 145, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f5\2F 6 {
-  width: 83.33%;
+  width: 83.333%;
 }
 /* line 150, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 7 {
-  width: 14.29%;
+  width: 14.286%;
 }
 /* line 154, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f2\2F 7 {
-  width: 28.57%;
+  width: 28.571%;
 }
 /* line 158, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f3\2F 7 {
-  width: 42.86%;
+  width: 42.857%;
 }
 /* line 162, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f4\2F 7 {
-  width: 57.14%;
+  width: 57.143%;
 }
 /* line 166, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f5\2F 7 {
-  width: 71.43%;
+  width: 71.429%;
 }
 /* line 170, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f6\2F 7 {
-  width: 85.71%;
+  width: 85.714%;
 }
 /* line 175, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 8 {
@@ -571,27 +571,27 @@ table {
 }
 /* line 192, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 9 {
-  width: 11.11%;
+  width: 11.111%;
 }
 /* line 196, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f2\2F 9 {
-  width: 22.22%;
+  width: 22.222%;
 }
 /* line 200, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f4\2F 9 {
-  width: 44.44%;
+  width: 44.444%;
 }
 /* line 204, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f5\2F 9 {
-  width: 55.56%;
+  width: 55.556%;
 }
 /* line 208, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f7\2F 9 {
-  width: 77.78%;
+  width: 77.778%;
 }
 /* line 212, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f8\2F 9 {
-  width: 88.89%;
+  width: 88.889%;
 }
 /* line 217, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 10 {
@@ -611,19 +611,19 @@ table {
 }
 /* line 234, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1\2F 12 {
-  width: 8.33%;
+  width: 8.333%;
 }
 /* line 238, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f5\2F 12 {
-  width: 41.67%;
+  width: 41.667%;
 }
 /* line 242, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f7\2F 12 {
-  width: 58.33%;
+  width: 58.333%;
 }
 /* line 246, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f11\2F 12 {
-  width: 91.67%;
+  width: 91.667%;
 }
 /* line 250, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
 .whole .f1 {
@@ -690,11 +690,11 @@ table {
   }
   /* line 318, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 3s {
-    width: 33.33%;
+    width: 33.333%;
   }
   /* line 322, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 3s {
-    width: 66.67%;
+    width: 66.667%;
   }
   /* line 328, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 4s {
@@ -722,35 +722,35 @@ table {
   }
   /* line 354, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 6s {
-    width: 16.67%;
+    width: 16.667%;
   }
   /* line 358, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 6s {
-    width: 83.33%;
+    width: 83.333%;
   }
   /* line 363, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 7s {
-    width: 14.29%;
+    width: 14.286%;
   }
   /* line 367, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 7s {
-    width: 28.57%;
+    width: 28.571%;
   }
   /* line 371, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f3\2F 7s {
-    width: 42.86%;
+    width: 42.857%;
   }
   /* line 375, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 7s {
-    width: 57.14%;
+    width: 57.143%;
   }
   /* line 379, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 7s {
-    width: 71.43%;
+    width: 71.429%;
   }
   /* line 383, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f6\2F 7s {
-    width: 85.71%;
+    width: 85.714%;
   }
   /* line 388, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 8s {
@@ -770,27 +770,27 @@ table {
   }
   /* line 405, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 9s {
-    width: 11.11%;
+    width: 11.111%;
   }
   /* line 409, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 9s {
-    width: 22.22%;
+    width: 22.222%;
   }
   /* line 413, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 9s {
-    width: 44.44%;
+    width: 44.444%;
   }
   /* line 417, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 9s {
-    width: 55.56%;
+    width: 55.556%;
   }
   /* line 421, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 9s {
-    width: 77.78%;
+    width: 77.778%;
   }
   /* line 425, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f8\2F 9s {
-    width: 88.89%;
+    width: 88.889%;
   }
   /* line 430, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 10s {
@@ -810,19 +810,19 @@ table {
   }
   /* line 447, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 12s {
-    width: 8.33%;
+    width: 8.333%;
   }
   /* line 451, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 12s {
-    width: 41.67%;
+    width: 41.667%;
   }
   /* line 455, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 12s {
-    width: 58.33%;
+    width: 58.333%;
   }
   /* line 459, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f11\2F 12s {
-    width: 91.67%;
+    width: 91.667%;
   }
   /* line 463, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1s {
@@ -860,11 +860,11 @@ table {
   }
   /* line 511, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 3m {
-    width: 33.33%;
+    width: 33.333%;
   }
   /* line 515, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 3m {
-    width: 66.67%;
+    width: 66.667%;
   }
   /* line 521, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 4m {
@@ -892,35 +892,35 @@ table {
   }
   /* line 547, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 6m {
-    width: 16.67%;
+    width: 16.667%;
   }
   /* line 551, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 6m {
-    width: 83.33%;
+    width: 83.333%;
   }
   /* line 556, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 7m {
-    width: 14.29%;
+    width: 14.286%;
   }
   /* line 560, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 7m {
-    width: 28.57%;
+    width: 28.571%;
   }
   /* line 564, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f3\2F 7m {
-    width: 42.86%;
+    width: 42.857%;
   }
   /* line 568, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 7m {
-    width: 57.14%;
+    width: 57.143%;
   }
   /* line 572, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 7m {
-    width: 71.43%;
+    width: 71.429%;
   }
   /* line 576, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f6\2F 7m {
-    width: 85.71%;
+    width: 85.714%;
   }
   /* line 581, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 8m {
@@ -940,27 +940,27 @@ table {
   }
   /* line 598, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 9m {
-    width: 11.11%;
+    width: 11.111%;
   }
   /* line 602, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 9m {
-    width: 22.22%;
+    width: 22.222%;
   }
   /* line 606, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 9m {
-    width: 44.44%;
+    width: 44.444%;
   }
   /* line 610, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 9m {
-    width: 55.56%;
+    width: 55.556%;
   }
   /* line 614, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 9m {
-    width: 77.78%;
+    width: 77.778%;
   }
   /* line 618, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f8\2F 9m {
-    width: 88.89%;
+    width: 88.889%;
   }
   /* line 623, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 10m {
@@ -980,19 +980,19 @@ table {
   }
   /* line 640, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 12m {
-    width: 8.33%;
+    width: 8.333%;
   }
   /* line 644, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 12m {
-    width: 41.67%;
+    width: 41.667%;
   }
   /* line 648, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 12m {
-    width: 58.33%;
+    width: 58.333%;
   }
   /* line 652, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f11\2F 12m {
-    width: 91.67%;
+    width: 91.667%;
   }
   /* line 656, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1m {
@@ -1018,11 +1018,11 @@ table {
   }
   /* line 685, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 3ml {
-    width: 33.33%;
+    width: 33.333%;
   }
   /* line 689, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 3ml {
-    width: 66.67%;
+    width: 66.667%;
   }
   /* line 695, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 4ml {
@@ -1050,35 +1050,35 @@ table {
   }
   /* line 721, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 6ml {
-    width: 16.67%;
+    width: 16.667%;
   }
   /* line 725, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 6ml {
-    width: 83.33%;
+    width: 83.333%;
   }
   /* line 730, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 7ml {
-    width: 14.29%;
+    width: 14.286%;
   }
   /* line 734, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 7ml {
-    width: 28.57%;
+    width: 28.571%;
   }
   /* line 738, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f3\2F 7ml {
-    width: 42.86%;
+    width: 42.857%;
   }
   /* line 742, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 7ml {
-    width: 57.14%;
+    width: 57.143%;
   }
   /* line 746, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 7ml {
-    width: 71.43%;
+    width: 71.429%;
   }
   /* line 750, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f6\2F 7ml {
-    width: 85.71%;
+    width: 85.714%;
   }
   /* line 755, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 8ml {
@@ -1098,27 +1098,27 @@ table {
   }
   /* line 772, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 9ml {
-    width: 11.11%;
+    width: 11.111%;
   }
   /* line 776, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f2\2F 9ml {
-    width: 22.22%;
+    width: 22.222%;
   }
   /* line 780, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f4\2F 9ml {
-    width: 44.44%;
+    width: 44.444%;
   }
   /* line 784, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 9ml {
-    width: 55.56%;
+    width: 55.556%;
   }
   /* line 788, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 9ml {
-    width: 77.78%;
+    width: 77.778%;
   }
   /* line 792, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f8\2F 9ml {
-    width: 88.89%;
+    width: 88.889%;
   }
   /* line 797, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 10ml {
@@ -1138,19 +1138,19 @@ table {
   }
   /* line 814, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1\2F 12ml {
-    width: 8.33%;
+    width: 8.333%;
   }
   /* line 818, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f5\2F 12ml {
-    width: 41.67%;
+    width: 41.667%;
   }
   /* line 822, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f7\2F 12ml {
-    width: 58.33%;
+    width: 58.333%;
   }
   /* line 826, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f11\2F 12ml {
-    width: 91.67%;
+    width: 91.667%;
   }
   /* line 830, /Users/bnoah/Dev/fractional/src/less/plugins/fractional.less */
   .whole .f1ml {
