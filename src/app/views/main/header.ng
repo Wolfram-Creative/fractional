@@ -1,12 +1,12 @@
-<div id="main_header" class="responsive_container">
-	<div class="fractional_row padding_10_left padding_10_right">
-		<div class="one_quarter small_one_quarter medium_one_third columns logo padding_2_top text_align_center small_padding_5">
+<div id="main_header" class="container">
+	<div class="whole padding_10_left padding_10_right">
+		<div class="f1/4 f1/4s f1/3m columns logo padding_2_top text_align_center small_padding_5">
 			<a href="/">
 				<i class="icon-fractional-150 no-text hide_small show_medium">fractional.css</i>
 				<i class="icon-logo-43 no-text show_small hide_medium hide_large"></i>
 			</a>
 		</div>
-		<div class="three_quarters small_three_quarters medium_two_thirds columns text_right nav_right">
+		<div class="f3/4 f3/4s f2/3m columns text_right nav_right">
 			<span class="button header margin_10_right" ng-click="root.showDownload()">Download</span>
 			<a class="link" ng-href="https://github.com/Wolfram-Creative/fractional" target="_blank">Contribute</a>
 		</div>

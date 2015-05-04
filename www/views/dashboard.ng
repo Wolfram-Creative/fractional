@@ -1,8 +1,8 @@
-<div class="responsive_container">
-	<div id="dashboard" class="fractional_row padding_50_top">
+<div class="container">
+	<div id="dashboard" class="whole padding_50_top">
 		<div class="three_quarters columns padding_20_right">
 			<!-- TEST RESULT OVERVIEW -->
-			<div id="test_result_overview" class="fractional_row drop_in margin_20_bottom" ng-if="root.tests.length">
+			<div id="test_result_overview" class="whole drop_in margin_20_bottom" ng-if="root.tests.length">
 				<div class="one_fifth small_one_fifth columns tests pending_tests_count" ng-click="test_filter.results = 'pending'">
 					<div class="test_count pending">
 						<div class="drop_in_enter slide_in_leave count" ng-if="pending_tests.length">
@@ -62,7 +62,7 @@
 			<!-- TEST RESULT HISTORY -->
 			<div id="test_results">
 				<div class="test_result slide_in" ng-repeat="test in root.tests | orderBy:test_order | filter:test_filter" ng-class="test.results.status">
-					<div class="fractional_row padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
+					<div class="whole padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
 						<div class="one_quarter columns title">
 							{{test.playlist}}
 						</div>
@@ -76,7 +76,7 @@
 							<span ng-if="test.results.duration">Test Length:</span>
 						</div>
 					</div>
-					<div class="fractional_row padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
+					<div class="whole padding_10_left padding_10_right" ng-click="toggleTestResults(test)">
 						<div class="one_quarter columns">
 							{{test.results.status}}
 						</div>
@@ -90,7 +90,7 @@
 							<span ng-if="test.results.duration">{{test.results.duration | duration}}</span>
 						</div>
 					</div>
-					<div class="fractional_row test_details fade_in padding_10_top padding_10_bottom" ng-if="test.expanded">
+					<div class="whole test_details fade_in padding_10_top padding_10_bottom" ng-if="test.expanded">
 						<div class="one_quarter columns padding_10_right">
 						</div>
 						<div class="three_quarters columns text_center">
@@ -137,7 +137,7 @@
 			</div>
 			<!-- LIST OF PLAYLISTS -->
 			<div class="playlist_list dashboard_view margin_20_bottom" ng-if="show_playlists">
-				<div class="fractional_row">
+				<div class="whole">
 					<div class="columns" ng-class="search.playlist.length ? 'four_fifths padding_5_right' : 'one' ">
 						<input class="search_bar" placeholder="search" ng-model="search.playlist" ng-escape-key="search = ''" ng-focus-me="run_test_clicked">
 					</div>
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 				<div class="search_results margin_10_bottom">
-					<div class="fractional_row playlist fade_in" ng-repeat="playlist in root.playlists  | filter:search">
+					<div class="whole playlist fade_in" ng-repeat="playlist in root.playlists  | filter:search">
 						<div ng-click="createTest(playlist._id)" class="three_quarters small_three_quarters columns playlist_title padding_20_left padding_20_right">
 							<span>{{playlist.playlist}}</span>
 						</div>

@@ -25,8 +25,7 @@ module.exports = function(grunt) {
             dumpLineNumbers: 'comments'
           },
           files: {
-            "www/css/style.css": "src/less/style.less",
-            "www/downloads/fractional.css": "src/less/plugins/fractional.less",
+            "www/css/style.css": "src/less/style.less"
           }
         },
         prod: {
@@ -48,6 +47,14 @@ module.exports = function(grunt) {
             },
             files: {
               "www/downloads/fractional.min.css": "src/less/plugins/fractional.less", 
+            }
+        },
+        buildUncompiled: {
+            options: {
+                paths: ["less"]
+            },
+            files: {
+              "www/downloads/fractional.css": "src/less/plugins/fractional.less", 
             }
         }
 
@@ -78,14 +85,15 @@ module.exports = function(grunt) {
     watch: {
         scripts: {
             files: ['src/**/*.js', '*.js'],
-            tasks: ['concat', 'nodemon', 'phantomcss'],
+            // tasks: ['concat', 'nodemon'],
+            tasks: ['concat'],
             options: {
-                spawn: false,
+                spawn: true,
             },
         },
         styles: {
             files: ['src/less/*.less', 'src/less/**/*.less'],
-            tasks: ['less:dev', 'less:build', 'usebanner:build', 'copy:fractional'],
+            tasks: ['less:dev', 'less:build', 'less:buildUncompiled', 'usebanner:build', 'copy:fractional'],
             options: {
                 spawn: false,
             },
