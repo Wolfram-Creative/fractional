@@ -1,14 +1,14 @@
 {
   "name": "fractional.css",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": {
     "name": "Brian Noah",
     "email": "brianjoshuanoah@gmail.com"
   },
   "engine": "node 0.10.26",
-  "contributors" : [
+  "contributors": [
     {
-      "name" : "Nate Lubeck",
+      "name": "Nate Lubeck",
       "email": "nate@wolframcreative.com"
     }
   ],
@@ -17,13 +17,14 @@
     "url": "https://github.com/Wolfram-Creative/fractional"
   },
   "dependencies": {
-    "express": "3.4.0",
-    "ejs": "*",
-    "mongojs": "~0.10.0",
+    "connect-redis": "~1.4.7",
     "dotenv": "~0.2.4",
-    "underscore": "~1.6.0",
+    "ejs": "*",
+    "express": "3.4.0",
+    "express-spam-referral-blocker": "^1.0.0",
+    "mongojs": "~0.10.0",
     "socket.io": "~0.9.16",
-    "connect-redis": "~1.4.7"
+    "underscore": "~1.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
