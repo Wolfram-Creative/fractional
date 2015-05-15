@@ -24,7 +24,8 @@ var cluster = require('cluster'),
     express = require('express'),
     http = require('http'),
     app = express(),
-    server = http.createServer(app);
+    server = http.createServer(app),
+    spamBlocker = require('express-spam-referral-blocker');
 
 var appHeaders = function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -42,6 +43,7 @@ var appHeaders = function(req, res, next) {
 
 app.configure(function(){
     app.set('port', process.env.PORT || 3000);
+    app.use(spamBlocker);
     app.use(appHeaders);
     app.use('/css', express.static(__dirname + '/www/css'));
     app.use('/img', express.static(__dirname + '/www/img'));
