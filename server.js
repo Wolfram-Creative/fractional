@@ -43,7 +43,7 @@ var appHeaders = function(req, res, next) {
 
 app.configure(function(){
     app.set('port', process.env.PORT || 3000);
-    app.use(spamBlocker);
+    app.use(spamBlocker.send404);
     app.use(appHeaders);
     app.use('/css', express.static(__dirname + '/www/css'));
     app.use('/img', express.static(__dirname + '/www/img'));
